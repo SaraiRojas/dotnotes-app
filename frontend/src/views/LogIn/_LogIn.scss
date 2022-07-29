@@ -1,0 +1,30 @@
+@use '../../styles/variables';
+
+main {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  align-self: flex-start;
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: variables.$title-typography;
+  font-size: 2.5em;
+}
+
+span {
+  color: variables.$primary;
+}
+
+a {
+  color: variables.$primary;
+  text-decoration: underline;
+}
