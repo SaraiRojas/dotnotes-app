@@ -1,5 +1,5 @@
 import React from 'react'
-import './_LogIn.scss'
+import '../../scss/views/_LogIn.scss'
 import SignInButton from '../../components/SigInButton/SigInButton'
 
 const LogIn = () => {
@@ -17,5 +17,3 @@ const LogIn = () => {
     </main>
   )
 }
-
-export default LogIn

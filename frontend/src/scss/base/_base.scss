@@ -1,0 +1,6 @@
+@use '../abstracts/variables';
+
+html,
+body {
+  font-family: var(--general-typography);
+}
