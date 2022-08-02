@@ -1,4 +1,4 @@
-@use '../../styles/variables';
+@use '../../scss/abstracts/variables';
 
 main {
   height: 95vh;
@@ -16,15 +16,15 @@ h1 {
 }
 
 h2 {
-  font-family: variables.$title-typography;
+  font-family: var(--title-typography);
   font-size: 2.5em;
 }
 
 span {
-  color: variables.$primary;
+  color: var(--primary);
 }
 
 a {
-  color: variables.$primary;
+  color: var(--primary);
   text-decoration: underline;
 }
