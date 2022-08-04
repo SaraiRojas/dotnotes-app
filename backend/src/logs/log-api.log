@@ -1,0 +1,388 @@
+[winston] [22-07-29 18:33:40] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:33:40] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:36:37] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:36:37] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:38:57] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:38:57] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:40:36] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:40:36] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:41:57] info: GET undefined, fetching notes
+[winston] [22-07-29 18:42:28] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:42:28] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:42:51] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:42:51] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:43:11] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:43:11] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:43:23] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-29 18:43:23] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-29 18:43:27] info: GET undefined, fetching notes
+[winston] [22-07-30 21:28:25] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-30 21:28:25] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-30 21:28:33] info: GET undefined, fetching notes
+[winston] [22-07-30 21:29:08] info: GET undefined, fetching notes
+[winston] [22-07-30 21:31:18] info: GET undefined, fetching notes
+[winston] [22-07-30 21:49:25] info: Server running on: 192.168.0.10:8080.
+[winston] [22-07-30 21:49:25] info: You can open http://localhost:8080 in your browser.
+[winston] [22-07-31 13:14:13] info: GET undefined, fetching notes
+[winston] [22-08-03 01:40:09] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 01:40:09] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 01:40:29] info: GET undefined, fetching notes
+[winston] [22-08-03 02:30:47] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 02:30:47] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 02:31:07] info: GET undefined, fetching notes
+[winston] [22-08-03 18:26:44] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 18:26:44] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 18:26:54] info: GET undefined, fetching notes
+[winston] [22-08-03 19:59:31] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 19:59:31] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 19:59:41] info: GET undefined, fetching notes
+[winston] [22-08-03 19:59:55] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 19:59:55] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:00:24] info: GET undefined, fetching notes
+[winston] [22-08-03 20:01:44] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:01:44] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:09:13] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:09:13] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:09:24] info: GET /notes, fetching notes
+[winston] [22-08-03 20:09:52] info: GET /notes, fetching notes
+[winston] [22-08-03 20:10:09] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:10:09] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:17:57] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:17:57] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:18:31] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:18:31] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:26:41] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:26:41] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:27:07] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:27:07] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:27:12] info: GET /notes, fetching notes
+[winston] [22-08-03 20:27:17] info: GET /notes/1, fetching note with id: 1
+[winston] [22-08-03 20:27:37] info: GET /notes/11, fetching note with id: 11
+[winston] [22-08-03 20:27:40] info: GET /notes/40, fetching note with id: 40
+[winston] [22-08-03 20:27:57] info: GET /notes/a, fetching note with id: a
+[winston] [22-08-03 20:28:03] info: GET /notes//, fetching notes
+[winston] [22-08-03 20:28:10] info: GET /notes, fetching notes
+[winston] [22-08-03 20:28:12] info: GET /notes/, fetching notes
+[winston] [22-08-03 20:28:50] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:28:50] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:30:02] info: GET /notes/3, fetching note with id: 3
+[winston] [22-08-03 20:30:52] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:30:52] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:36:00] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:36:00] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:36:08] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:36:08] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:36:39] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:36:39] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:36:45] info: GET /notes/search, fetching notes that contain 'undefined'
+[winston] [22-08-03 20:37:04] info: GET /notes/search?keywords=h, fetching notes that contain 'h'
+[winston] [22-08-03 20:37:27] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:37:27] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:37:29] info: GET /notes/search?keywords=h, fetching notes that contain 'h'
+[winston] [22-08-03 20:38:45] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:38:45] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:38:48] info: GET /notes/search?keywords=h, fetching notes that contain 'h'
+[winston] [22-08-03 20:39:09] info: GET /notes/, fetching notes
+[winston] [22-08-03 20:39:19] info: GET /notes/search?keywords=One, fetching notes that contain 'One'
+[winston] [22-08-03 20:42:22] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:42:22] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:42:28] info: GET /notes/search?keywords=One, fetching notes that contain 'One'
+[winston] [22-08-03 20:43:15] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:43:15] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:43:19] info: GET /notes/search?keywords=One, fetching notes that contain 'One'
+[winston] [22-08-03 20:44:01] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:44:01] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:44:16] info: GET /notes/search?keywords=One, fetching notes that contain 'One'
+[winston] [22-08-03 20:45:44] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:45:44] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:46:24] info: GET /notes/search?keywords=One, fetching notes that contain 'One'
+[winston] [22-08-03 20:49:27] info: GET /notes, fetching notes
+[winston] [22-08-03 20:49:32] info: GET /notes/1, fetching note with id: 1
+[winston] [22-08-03 20:49:42] info: GET /notes/40, fetching note with id: 40
+[winston] [22-08-03 20:49:48] info: GET /notes/search, fetching notes that contain 'undefined'
+[winston] [22-08-03 20:49:59] info: GET /notes/search?keywords=one, fetching notes that contain 'one'
+[winston] [22-08-03 20:51:17] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:51:17] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:51:22] info: GET /notes/search?keywords=one, fetching notes that contain 'one'
+[winston] [22-08-03 20:51:41] info: GET /notes/search, fetching notes that contain 'undefined'
+[winston] [22-08-03 20:52:07] info: GET /notes/search?keywords=azxxfas, fetching notes that contain 'azxxfas'
+[winston] [22-08-03 20:52:14] info: GET /notes/search?keywords=azxxfas, fetching notes that contain 'azxxfas'
+[winston] [22-08-03 20:52:19] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 20:52:41] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:52:41] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:52:45] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 20:53:01] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:53:01] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:53:07] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 20:53:08] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 20:53:12] info: GET /notes/search?keywords=one, fetching notes that contain 'one'
+[winston] [22-08-03 20:53:15] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 20:54:04] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:54:04] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 20:54:18] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 20:54:18] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 21:41:02] info: GET /notes/search?keywords=one, fetching notes that contain 'one'
+[winston] [22-08-03 21:41:18] info: GET /notes/search?keywords=caca, fetching notes that contain 'caca'
+[winston] [22-08-03 21:41:24] info: GET /notes/search?keywords=kk, fetching notes that contain 'kk'
+[winston] [22-08-03 22:19:30] info: GET /notes/search?keywords=one, fetching notes that contain 'one'
+[winston] [22-08-03 22:19:39] info: GET /notes/search?keywords=kk, fetching notes that contain 'kk'
+[winston] [22-08-03 22:36:37] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:36:37] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:37:36] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:37:36] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:38:20] info: GET /notes, fetching notes
+[winston] [22-08-03 22:38:39] info: GET /notes/3, fetching note with id: 3
+[winston] [22-08-03 22:38:51] info: GET /notes/create, fetching note with id: create
+[winston] [22-08-03 22:39:49] info: GET /notes/create, fetching note with id: create
+[winston] [22-08-03 22:40:06] info: POST /notes/create, creating note
+[winston] [22-08-03 22:40:06] error: undefined
+[winston] [22-08-03 22:42:42] info: POST /notes/create, creating note
+[winston] [22-08-03 22:42:42] error: undefined
+[winston] [22-08-03 22:43:01] info: POST /notes/create, creating note
+[winston] [22-08-03 22:43:01] error: undefined
+[winston] [22-08-03 22:43:37] info: POST /notes/create, creating note
+[winston] [22-08-03 22:43:37] error: undefined
+[winston] [22-08-03 22:43:41] info: POST /notes/create, creating note
+[winston] [22-08-03 22:43:41] error: undefined
+[winston] [22-08-03 22:43:42] info: POST /notes/create, creating note
+[winston] [22-08-03 22:43:42] error: undefined
+[winston] [22-08-03 22:43:42] info: POST /notes/create, creating note
+[winston] [22-08-03 22:43:42] error: undefined
+[winston] [22-08-03 22:44:59] info: POST /notes/create, creating note
+[winston] [22-08-03 22:44:59] error: undefined
+[winston] [22-08-03 22:45:16] info: POST /notes/create, creating note
+[winston] [22-08-03 22:45:16] error: undefined
+[winston] [22-08-03 22:47:33] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:47:33] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:47:37] info: POST /notes/create, creating note
+[winston] [22-08-03 22:47:37] error: undefined
+[winston] [22-08-03 22:48:26] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:48:26] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:48:33] info: POST /notes/create, creating note
+[winston] [22-08-03 22:48:33] error: undefined
+[winston] [22-08-03 22:48:49] info: POST /notes/create, creating note
+[winston] [22-08-03 22:48:49] error: undefined
+[winston] [22-08-03 22:49:15] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:49:15] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:49:18] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:49:18] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 22:49:22] info: POST /notes/create, creating note
+[winston] [22-08-03 22:49:22] error: undefined
+[winston] [22-08-03 22:49:46] info: POST /notes/create, creating note
+[winston] [22-08-03 22:49:46] error: undefined
+[winston] [22-08-03 22:50:05] info: POST /notes/create, creating note
+[winston] [22-08-03 22:50:05] error: undefined
+[winston] [22-08-03 22:50:22] info: POST /notes/create, creating note
+[winston] [22-08-03 22:50:22] error: undefined
+[winston] [22-08-03 22:50:34] info: POST /notes/create, creating note
+[winston] [22-08-03 22:50:34] error: undefined
+[winston] [22-08-03 22:52:59] info: POST /notes/create, creating note
+[winston] [22-08-03 22:52:59] error: undefined
+[winston] [22-08-03 22:53:11] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:11] error: undefined
+[winston] [22-08-03 22:53:12] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:12] error: undefined
+[winston] [22-08-03 22:53:12] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:12] error: undefined
+[winston] [22-08-03 22:53:13] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:13] error: undefined
+[winston] [22-08-03 22:53:13] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:13] error: undefined
+[winston] [22-08-03 22:53:14] info: POST /notes/create, creating note
+[winston] [22-08-03 22:53:14] error: undefined
+[winston] [22-08-03 22:53:50] info: POST /notes/create, creating note
+[winston] [22-08-03 22:54:30] info: POST /notes/create, creating note
+[winston] [22-08-03 22:54:59] info: GET /notes, fetching notes
+[winston] [22-08-03 22:59:15] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 22:59:15] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:01:46] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:01:46] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:03:25] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:03:25] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:03:33] info: GET /notes, fetching notes
+[winston] [22-08-03 23:04:59] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:04:59] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:09:30] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:09:30] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:10:13] info: PUT /notes/100, fetching note 'undefined'
+[winston] [22-08-03 23:10:13] error: undefined
+[winston] [22-08-03 23:11:07] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:11:07] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:11:11] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:11:11] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:11:25] info: GET /notes, fetching notes
+[winston] [22-08-03 23:11:51] info: GET /notes/100, fetching note with id: 100
+[winston] [22-08-03 23:11:55] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:11:55] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:13:02] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:13:02] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:14:18] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:14:18] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:14:21] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:14:21] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:14:40] info: GET /notes, fetching notes
+[winston] [22-08-03 23:15:03] info: PUT /notes/31, fetching note '31'
+[winston] [22-08-03 23:15:03] info: PUT /notes/31, updating note '31'
+[winston] [22-08-03 23:15:14] info: GET /notes, fetching notes
+[winston] [22-08-03 23:16:20] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:16:20] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:16:28] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:16:28] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:16:47] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:16:47] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:16:54] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:16:54] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:16:58] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:16:58] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:18:08] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:18:08] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:18:12] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:18:12] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:18:20] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:18:20] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:18:23] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:18:23] info: PUT /notes/100, updating note '100'
+[winston] [22-08-03 23:18:31] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:18:31] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:18:33] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:19:16] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:19:16] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:19:19] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:20:00] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:20:00] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:20:02] info: PUT /notes/100, fetching note '100'
+[winston] [22-08-03 23:20:25] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:20:25] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:23:17] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:23:17] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:23:48] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:23:48] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:23:50] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:23:50] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:23:58] info: DELETE /notes/100, fetching note '100'
+[winston] [22-08-03 23:24:05] info: DELETE /notes/32, fetching note '32'
+[winston] [22-08-03 23:24:13] info: GET /notes, fetching notes
+[winston] [22-08-03 23:24:51] info: POST /notes, creating note
+[winston] [22-08-03 23:24:55] info: GET /notes, fetching notes
+[winston] [22-08-03 23:25:13] info: GET /notes/33, fetching note with id: 33
+[winston] [22-08-03 23:25:22] info: DELETE /notes/33, fetching note '33'
+[winston] [22-08-03 23:25:31] info: GET /notes, fetching notes
+[winston] [22-08-03 23:25:57] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:25:57] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:26:11] info: POST /notes, creating note
+[winston] [22-08-03 23:26:15] info: GET /notes, fetching notes
+[winston] [22-08-03 23:26:23] info: GET /notes/100, fetching note with id: 100
+[winston] [22-08-03 23:26:28] info: DELETE /notes/100, fetching note '100'
+[winston] [22-08-03 23:26:38] info: GET /notes, fetching notes
+[winston] [22-08-03 23:26:47] info: GET /notes/34, fetching note with id: 34
+[winston] [22-08-03 23:26:51] info: DELETE /notes/34, fetching note '34'
+[winston] [22-08-03 23:26:51] info: DELETE /notes/34, deleting note '34'
+[winston] [22-08-03 23:28:55] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:28:55] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:29:36] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:29:36] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:29:52] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:29:52] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:29:55] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:29:55] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:29:57] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:29:57] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:31:55] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:31:55] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:36:12] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:36:12] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:36:56] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:36:56] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:37:06] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:37:06] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:37:20] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:37:20] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:38:57] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:38:57] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:39:00] info: GET /users, fetching users
+[winston] [22-08-03 23:39:00] error: Association with alias "note" does not exist on User
+[winston] [22-08-03 23:39:15] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:39:15] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:39:17] info: GET /users, fetching users
+[winston] [22-08-03 23:39:17] error: Association with alias "noteS" does not exist on User
+[winston] [22-08-03 23:39:24] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:39:24] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:39:26] info: GET /users, fetching users
+[winston] [22-08-03 23:41:22] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:41:22] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:41:37] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:41:37] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:41:40] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:41:40] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:41:49] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:41:49] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:43:48] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:43:48] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:44:02] info: GET /users/1, fetching user with id: 1
+[winston] [22-08-03 23:44:09] info: GET /users/3, fetching user with id: 3
+[winston] [22-08-03 23:44:18] info: GET /users/5, fetching user with id: 5
+[winston] [22-08-03 23:44:21] info: GET /users/9, fetching user with id: 9
+[winston] [22-08-03 23:44:47] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:44:47] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:44:49] info: GET /users/9, fetching user with id: 9
+[winston] [22-08-03 23:44:54] info: GET /users/1, fetching user with id: 1
+[winston] [22-08-03 23:45:26] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:46:06] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:46:07] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:46:17] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:46:17] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:46:19] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:46:31] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:46:31] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:46:43] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:46:43] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:46:45] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:47:12] info: GET /users/search, fetching user with code 'undefined'
+[winston] [22-08-03 23:47:14] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:47:29] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:47:29] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:47:31] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [22-08-03 23:48:47] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:48:47] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:49:35] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:49:35] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:50:25] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:50:25] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:50:39] info: GET /users, fetching users
+[winston] [22-08-03 23:51:17] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:51:17] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:51:20] info: POST /users, creating and storing user
+[winston] [22-08-03 23:51:26] info: GET /users, fetching users
+[winston] [22-08-03 23:52:42] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:52:42] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:52:49] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:52:49] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-03 23:53:00] info: GET /users/11, fetching user with id: 11
+[winston] [22-08-03 23:53:06] info: DELETE /users/11, fetching user '11'
+[winston] [22-08-03 23:53:06] info: DELETE /users/11, deleting user '11'
+[winston] [22-08-03 23:53:12] info: GET /users, fetching users
+[winston] [22-08-03 23:53:30] info: Server running on: 192.168.0.10:8080.
+[winston] [22-08-03 23:53:30] info: You can open http://localhost:8080 in your browser.
+[winston] [22-08-04 00:36:29] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:36:29] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:36:41] info: GET /notes, fetching notes
+[winston] [22-08-04 00:36:41] error: connect ECONNREFUSED 127.0.0.1:8000
+[winston] [22-08-04 00:37:03] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:37:03] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:37:07] info: GET /notes, fetching notes
+[winston] [22-08-04 00:37:07] error: Access denied for user 'admin'@'localhost' (using password: YES)
+[winston] [22-08-04 00:38:23] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:38:23] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:38:26] info: GET /notes, fetching notes
+[winston] [22-08-04 00:43:37] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:43:37] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:43:43] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:43:43] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:43:51] info: GET /notes, fetching notes
+[winston] [22-08-04 00:43:58] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 00:43:58] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 00:44:01] info: GET /notes, fetching notes
+[winston] [22-08-04 01:21:26] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 01:21:26] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-04 01:22:31] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-04 01:22:31] info: You can open http://localhost:5000 in your browser.
