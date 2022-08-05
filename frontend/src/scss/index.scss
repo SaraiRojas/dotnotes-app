@@ -1,10 +1,9 @@
-/*abstracts*/
-@use './abstracts/variables';
-
 /*base*/
 @use './base/base';
 @use './base/resets';
 
 /*views*/
+@use './views';
 
 /*components*/
+@use './components';

@@ -1,30 +1,95 @@
-@use '../../scss/abstracts/variables';
+@use '../abstracts' as a;
 
 main {
   height: 95vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-around;
+  justify-items: center;
+
+  @include a.breakpoints-up(medium) {
+    height: 100vh;
+    grid-template-rows: [row1-start] 18% [row1-end] 60% [third-line] 5% [fourth-line] 10% [fifth-line] 10% [last-line];
+  }
+
+  @include a.breakpoints-up(large) {
+    height: 100vh;
+    grid-template-columns: [first] 40% [line2] 60% [end];
+    grid-template-rows: [row1-start] 35% [row1-end] 20% [third-line] 15% [fourth-line] auto [last-line];
+  }
 }
 
 h1 {
-  align-self: flex-start;
+  justify-self: start;
   padding-left: 10%;
   padding-top: 10%;
-  font-size: 4em;
+  font-size: 2.5em;
+
+  @include a.breakpoints-up(small) {
+    font-size: 4em;
+  }
+
+  @include a.breakpoints-up(medium) {
+    font-size: 5em;
+    padding-top: 0;
+  }
+
+  @include a.breakpoints-up(large) {
+    padding: 0;
+    justify-self: center;
+    align-self: end;
+  }
 }
 
 h2 {
   font-family: var(--title-typography);
-  font-size: 2.5em;
+  font-size: 2em;
+
+  @include a.breakpoints-up(small) {
+    font-size: 2.5em;
+  }
+
+  @include a.breakpoints-up(large) {
+    align-self: end;
+  }
 }
 
 span {
   color: var(--primary);
 }
 
+p {
+  font-size: 0.8em;
+
+  @include a.breakpoints-up(small) {
+    font-size: 1em;
+  }
+
+  @include a.breakpoints-up(medium) {
+    align-self: start;
+  }
+
+  @include a.breakpoints-up(large) {
+    align-self: start;
+  }
+}
+
 a {
   color: var(--primary);
   text-decoration: underline;
+}
+
+img {
+  width: 90%;
+  justify-self: end;
+
+  @include a.breakpoints-up(large) {
+    grid-column: 2 / 3;
+    grid-row: 1 / last-line;
+  }
+
+  @include a.breakpoints-up(xlarge) {
+    width: auto;
+    height: 100%;
+  }
 }
