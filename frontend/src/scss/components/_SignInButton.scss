@@ -1,0 +1,20 @@
+@use '../abstracts' as a;
+
+Button {
+  &.MuiButton-root {
+    border-radius: 14px;
+    border-width: 3px;
+    color: #ff3366;
+    border-color: #ff3366;
+    text-transform: none;
+    font-family: var(--general-typography);
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 9em;
+
+    @include a.breakpoints-up(small) {
+      font-size: 1.5em;
+      width: 12em;
+    }
+  }
+}

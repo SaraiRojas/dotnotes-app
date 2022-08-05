@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../scss/views/_LogIn.scss'
+import '../../scss/index.scss'
 import SignInButton from '../../components/SigInButton/SigInButton'
 
 const LogIn = () => {
@@ -8,12 +8,14 @@ const LogIn = () => {
       <h1>
         DotNotes<span>.</span>
       </h1>
-      <img src="/ImgsignInImg.png" alt="girl taking notes" width="100%"></img>
+      <img src="/ImgsignInImg.png" alt="girl taking notes"></img>
       <h2>Start taking notes</h2>
-      <SignInButton width="80%" />
+      <SignInButton />
       <p>
         Don't have an account yet? <a>Register</a>
       </p>
     </main>
   )
 }
+
+export default LogIn
