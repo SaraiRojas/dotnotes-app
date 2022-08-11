@@ -5,12 +5,12 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: unless-stopped
     volumes: 
-      - ./database/init.sql:/docker-entrypoint-initdb.d/0_init.sql
-      - $HOME/database:/var/lib/mysql
+      - ./backend/database/init.sql:/docker-entrypoint-initdb.d/0_init.sql
+      - $HOME/dotnotes/database:/var/lib/mysql
     ports:
-      - 8000:3306
+      - 3306:3306
     expose:
-      - 8000
+      - 3306
     environment:
       MYSQL_DATABASE: dotnotes_db
       MYSQL_USER: admin
@@ -21,12 +21,12 @@ services:
     networks:
       - internalnet
   
-  nodeapp:
-    container_name: nodeappcontainer
-    build: .
-    image: nodeapp:v1
+  nodeapi:
+    container_name: apicontainer
+    build: ./backend
+    image: nodeapi:v1
     volumes:
-      - $HOME/nodeapp:/code
+      - $HOME/dotnotes/api:/code
     ports:
       - 3000:3000
     expose:
@@ -39,12 +39,32 @@ services:
       DB_NAME: dotnotes_db
       DB_CONNECTION_LIMIT: 20
       SERVICE_TAGS: prod
-      SERVICE_NAME: nopdeappservice
+      SERVICE_NAME: nodeapi
       SERVER_PORT: 3000
     depends_on:
       - mysqldb
     networks:
       - internalnet
+  
+  nodeapp:
+    container_name: appcontainer
+    build: ./frontend
+    image: nodeapp:v1
+    volumes:
+      - $HOME/dotnotes/app:/code
+    ports:
+      - 5173:5173
+    expose:
+      - 5173
+    environment:
+      SERVICE_TAGS: prod
+      SERVICE_NAME: nodeapp
+      SERVICE_PORT: 5173
+    depends_on:
+      - nodeapi
+    networks:
+      - internalnet
+
 
 networks:
   internalnet:
