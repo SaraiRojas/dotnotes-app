@@ -1,0 +1,17 @@
+.Header {
+  width: 100vw;
+  display: flex;
+  padding: 1.5em;
+
+  &_appname {
+    padding: 0;
+    width: 80%;
+    font-size: 2em;
+  }
+
+  &_avatar {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

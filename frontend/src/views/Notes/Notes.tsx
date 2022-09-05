@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import React, { useContext } from 'react'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
+import Header from '../../components/header/header'
 
 const Notes = () => {
   const { logOut } = useContext(AuthContext)
@@ -11,7 +12,6 @@ const Notes = () => {
 
   return (
     <main>
-      <h1>WELCOME TO DOTNOTES</h1>
       <Button
         className={'Button'}
         variant="outlined"
