@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
-import Header from '../../components/header/header'
 import { Outlet } from 'react-router-dom'
+import Header from '../header/Header'
 
 const LayOut = () => {
   return (

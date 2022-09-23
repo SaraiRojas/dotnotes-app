@@ -2,13 +2,15 @@ import { Button } from '@mui/material'
 import React, { useContext } from 'react'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
-import Header from '../../components/header/header'
+import { getNotes } from '../../api/Notes'
 
 const Notes = () => {
   const { logOut } = useContext(AuthContext)
 
   const { isAuthenticated, user } = useContext(AuthContext)
   console.log(isAuthenticated, user)
+
+  getNotes()
 
   return (
     <main>
