@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
 import { getNotes } from '../../api/Notes'
+import PrevNode from '../../components/PrevNote/PrevNote'
 
 const Notes = () => {
   const { logOut } = useContext(AuthContext)
@@ -21,6 +22,7 @@ const Notes = () => {
       >
         Sign Out
       </Button>
+      <PrevNode></PrevNode>
     </main>
   )
 }
