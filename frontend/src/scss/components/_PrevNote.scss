@@ -1,4 +1,4 @@
-.NoteContainer_title{
+.NoteContainer_title {
   color: var(--primary);
 
   &.MuiTypography-root {
@@ -7,16 +7,14 @@
   }
 }
 
-.NoteContainer_date{
-
+.NoteContainer_date {
   &.MuiTypography-root {
     font-family: var(--general-typography);
     font-size: 1em;
   }
 }
 
-.NoteContainer_text{
-
+.NoteContainer_text {
   &.MuiTypography-paragraph {
     font-family: var(--general-typography);
     font-size: 1em;

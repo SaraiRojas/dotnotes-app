@@ -11,7 +11,7 @@ function App() {
     return (
       <Route path="/*" element={<ProtectedRoute component={LayOut} />}>
         <Route path="notes/*" element={<Notes />}>
-          <Route path="notes/:title" element={<Notes />}/>
+          <Route path="notes/:title" element={<Notes />} />
         </Route>
       </Route>
     )
