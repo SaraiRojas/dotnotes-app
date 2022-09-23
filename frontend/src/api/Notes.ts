@@ -6,3 +6,4 @@ export const getNotes = () => axios({
   responseType: 'json'
 })
   .then((data: any) => console.log(JSON.stringify(data)))
+  
