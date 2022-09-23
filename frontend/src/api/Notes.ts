@@ -5,4 +5,4 @@ export const getNotes = () => axios({
   url: 'http://localhost:3000/notes',
   responseType: 'json'
 })
-  .then((data: any) => console.log(data))
+  .then((data: any) => console.log(JSON.stringify(data)))
