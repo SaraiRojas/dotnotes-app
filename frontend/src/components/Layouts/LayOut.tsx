@@ -1,6 +1,4 @@
-import React, { useContext } from 'react'
 import '../../scss/index.scss'
-import { AuthContext } from '../../context/AuthContextProvider'
 import { Outlet } from 'react-router-dom'
 import Header from '../header/Header'
 

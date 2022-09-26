@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
 import { getNotes } from '../../api/Notes'
@@ -11,7 +11,13 @@ const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
   console.log(isAuthenticated, user)
 
-  getNotes()
+  const [notes, setNotes] = useState<any>(null)
+
+  useEffect(() => {
+    getNotes().then((data) => {
+      setNotes(data)
+    })
+  }, [])
 
   return (
     <main>
@@ -22,7 +28,7 @@ const Notes = () => {
       >
         Sign Out
       </Button>
-      <PrevNode></PrevNode>
+      {notes && notes.map((note: any) => <PrevNode note={note} />)}
     </main>
   )
 }
