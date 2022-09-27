@@ -5,14 +5,14 @@ import Notes from './views/Notes/Notes'
 import { AuthContextProvider, AuthContext } from './context/AuthContextProvider'
 import { ProtectedRoute } from './router/ProtectedRoute'
 import LayOut from './components/Layouts/LayOut'
+import FullNote from './components/FullNote/FullNote'
 
 function App() {
   const privateRoutes = () => {
     return (
       <Route path="/*" element={<ProtectedRoute component={LayOut} />}>
-        <Route path="notes/*" element={<Notes />}>
-          <Route path="notes/:title" element={<Notes />} />
-        </Route>
+        <Route path="notes" element={<Notes />} />
+        <Route path="title" element={<FullNote />} />
       </Route>
     )
   }

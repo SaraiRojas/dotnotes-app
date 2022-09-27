@@ -4,4 +4,6 @@ export interface Icontext {
   logOut: any
   user: Iuser
   isLoading: boolean
+  noteInfo: any
+  setNoteInfo: Dispatch<SetStateAction<any[]>>
 }
