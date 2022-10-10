@@ -3,6 +3,7 @@ import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
 import { getNotes } from '../../api/Notes'
 import PrevNode from '../../components/PrevNote/PrevNote'
+import { Stack } from '@mui/material'
 
 const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
@@ -17,7 +18,11 @@ const Notes = () => {
   }, [])
 
   return (
-    <main>{notes && notes.map((note: any) => <PrevNode note={note} />)}</main>
+    <div className="notes-container">
+      <Stack spacing={1}>
+        {notes && notes.map((note: any) => <PrevNode note={note} />)}
+      </Stack>
+    </div>
   )
 }
 

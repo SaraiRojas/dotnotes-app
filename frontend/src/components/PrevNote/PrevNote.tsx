@@ -3,6 +3,7 @@ import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContextProvider'
 import '../../scss/index.scss'
+import { formatDateToString } from '../../utils/formaters'
 import NoteContainer from '../NoteContainer/NoteContainer'
 
 const PrevNode = (note: any) => {
@@ -12,12 +13,12 @@ const PrevNode = (note: any) => {
 
   return (
     <CardActionArea component={Link} to="/title" onClick={handleClick}>
-      <NoteContainer>
+      <NoteContainer cardHeight="125px">
         <Typography className={'NoteContainer_title'}>
           {note.note.title}
         </Typography>
         <Typography className={'NoteContainer_date'}>
-          {note.note.date.toString()}
+          {formatDateToString(note.note.date)}
         </Typography>
         <Typography className={'NoteContainer_text'} paragraph={true}>
           {note.note.note_text}
