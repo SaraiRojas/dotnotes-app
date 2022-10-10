@@ -1,7 +1,7 @@
 export interface Icontext {
   isAuthenticated: boolean
-  logIn: any
-  logOut: any
+  logIn: Function
+  logOut: Function
   user: Iuser
   isLoading: boolean
   noteInfo: any
