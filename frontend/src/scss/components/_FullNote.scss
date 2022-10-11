@@ -1,0 +1,13 @@
+.fullNote {
+  &_actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_icon {
+    &.MuiSvgIcon-root {
+      font-size: 2.5em;
+      cursor: pointer;
+    }
+  }
+}
