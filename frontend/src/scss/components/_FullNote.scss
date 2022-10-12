@@ -10,4 +10,17 @@
       cursor: pointer;
     }
   }
+
+  &_editableContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  &_editableTitle{
+    font-family: var(--title-typography);
+    color: var(--primary);
+    font-size: 2em;
+    outline-color:var(--primary);
+  }
 }
