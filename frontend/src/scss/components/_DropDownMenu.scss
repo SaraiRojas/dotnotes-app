@@ -1,0 +1,16 @@
+.DropDownMenu {
+  &_button {
+    &.MuiButtonBase-root {
+      color: black;
+      height: fit-content;
+      width: fit-content;
+      padding: 0;
+    }
+  }
+
+  &_icon {
+    &.MuiSvgIcon-root {
+      font-size: 2em;
+    }
+  }
+}

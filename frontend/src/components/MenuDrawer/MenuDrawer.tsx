@@ -26,7 +26,7 @@ const MenuDrawer = ({
           <ListItem key={`${text}-id`} disablePadding>
             <ListItemButton onClick={() => onClick()}>
               <ListItemIcon>
-                <Icon />
+                <Icon className="menuDrawer_icon" />
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
