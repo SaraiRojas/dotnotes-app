@@ -46,24 +46,24 @@ services:
     networks:
       - internalnet
   
-  viteapp:
-    container_name: appcontainer
-    build: ./frontend
-    image: viteapp:v1
-    volumes:
-      - $HOME/dotnotes/app:/code
-    ports:
-      - 5173:5173
-    expose:
-      - 5173
-    environment:
-      SERVICE_TAGS: prod
-      SERVICE_NAME: viteapp
-      SERVICE_PORT: 5173
-    depends_on:
-      - nodeapi
-    networks:
-      - internalnet
+  # viteapp:
+  #   container_name: appcontainer
+  #   build: ./frontend
+  #   image: viteapp:v1
+  #   volumes:
+  #     - $HOME/dotnotes/app:/code
+  #   ports:
+  #     - 5173:5173
+  #   expose:
+  #     - 5173
+  #   environment:
+  #     SERVICE_TAGS: prod
+  #     SERVICE_NAME: viteapp
+  #     SERVICE_PORT: 5173
+  #   depends_on:
+  #     - nodeapi
+  #   networks:
+  #     - internalnet
 
 
 networks:

@@ -1,1 +1,4 @@
 .env
+.gitignore
+.eslintrc.json
+.prettierrc.json
