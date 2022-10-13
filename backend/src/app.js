@@ -1,22 +1,19 @@
 // ------------------- Import's -------------------
-const path = require('path');
 const express = require('express');
-const methodOverride = require('method-override');
+// const path = require('path');
+// const methodOverride = require('method-override');
 // const morgan = require('morgan');
-
 
 // ------------------- APP -------------------
 const app = express();
 
 // ------------------- Middlewares -------------------
-app.use( express.urlencoded({extended:false}) );
-app.use( express.json() );
-app.use( methodOverride('_method') );
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+// app.use( methodOverride('_method') );
 // app.use( morgan('dev') );
 
-
 // ------------------- Template Engine -------------------
-
 
 // ------------------- Main CODE -------------------
 
@@ -27,7 +24,6 @@ const UsersRoutes = require('./routes/users');
 
 app.use('/notes', NotesRoutes);
 app.use('/users', UsersRoutes);
-
 
 // **** Error Handler ****
 // Error Import's
