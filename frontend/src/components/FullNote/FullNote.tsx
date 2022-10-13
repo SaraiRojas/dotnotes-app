@@ -8,21 +8,22 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import { useNavigate } from 'react-router-dom'
 import DropDownMenu from '../DropDownMenu/DropDownMenu'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import { INote } from '../../model/interface'
 
 const FullNote = () => {
   const { noteInfo } = useContext(AuthContext)
 
   const navigate = useNavigate()
 
-  const [values, setValues] = useState<any>(noteInfo.note)
+  const [values, setValues] = useState<INote>(noteInfo)
 
   const handleChange = (value: string, key: string) => {
     const newValues = {
       ...noteInfo.note,
-      [key]: value
+      [key]: value,
     }
-    setValues(value)
+    setValues(newValues)
   }
 
   return (
@@ -36,19 +37,25 @@ const FullNote = () => {
       </div>
       <div>
         <Typography className={'NoteContainer_title'}>
-          {noteInfo.note.title}
+          {noteInfo.title}
         </Typography>
         <Typography className={'NoteContainer_date'}>
-          {formatDateToString(noteInfo.note.date)}
+          {noteInfo.created_at}
         </Typography>
         <Typography className={'NoteContainer_text'} paragraph={true}>
-          {noteInfo.note.note_text}
+          {noteInfo.content}
         </Typography>
       </div>
-      <div className='fullNote_editableContainer'>
-        <input type={'text'} className='fullNote_editableTitle' value={values.title} onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e.target.value, 'title')}/>
-        <textarea className='fullNote_editableText'>
-        </textarea> 
+      <div className="fullNote_editableContainer">
+        <input
+          type={'text'}
+          className="fullNote_editableTitle"
+          value={values.title}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleChange(e.target.value, 'title')
+          }
+        />
+        <textarea className="fullNote_editableText"></textarea>
       </div>
     </NoteContainer>
   )

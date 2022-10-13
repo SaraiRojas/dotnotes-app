@@ -11,16 +11,16 @@
     }
   }
 
-  &_editableContainer{
+  &_editableContainer {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
   }
 
-  &_editableTitle{
+  &_editableTitle {
     font-family: var(--title-typography);
     color: var(--primary);
     font-size: 2em;
-    outline-color:var(--primary);
+    outline-color: var(--primary);
   }
 }
