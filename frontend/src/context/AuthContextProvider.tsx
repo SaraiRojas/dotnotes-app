@@ -14,6 +14,11 @@ export const AuthContextProvider = ({
 
   const logIn = () => loginWithRedirect()
 
+  // user -> post -> http://localhost:3000/users/
+  // axios.post('http://localhost:3000/users/', {
+  //   user: user
+  // })
+
   const logOut = () => logout()
 
   const [noteInfo, setNoteInfo] = useState(null)

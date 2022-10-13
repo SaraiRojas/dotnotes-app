@@ -386,3 +386,19 @@
 [winston] [22-08-04 01:21:26] info: You can open http://localhost:5000 in your browser.
 [winston] [22-08-04 01:22:31] info: Server running on: 192.168.0.10:5000.
 [winston] [22-08-04 01:22:31] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-19 10:51:46] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-19 10:51:46] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-19 10:51:57] info: GET /notes, fetching notes
+[winston] [22-08-19 10:51:57] error: Access denied for user 'admin'@'localhost' (using password: YES)
+[winston] [22-08-19 10:52:33] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-19 10:52:33] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-19 10:52:39] info: GET /notes, fetching notes
+[winston] [22-08-19 11:16:52] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-19 11:16:52] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-19 11:17:05] info: GET /notes, fetching notes
+[winston] [22-08-19 11:17:25] info: GET /users, fetching users
+[winston] [22-08-19 11:17:30] info: GET /users/1, fetching user with id: 1
+[winston] [22-08-19 11:18:23] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-19 11:18:23] info: You can open http://localhost:5000 in your browser.
+[winston] [22-08-19 11:51:17] info: Server running on: 192.168.0.10:5000.
+[winston] [22-08-19 11:51:17] info: You can open http://localhost:5000 in your browser.

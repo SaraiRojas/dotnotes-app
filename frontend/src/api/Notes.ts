@@ -15,14 +15,14 @@ const data = [
   },
 ]
 
-// export const getNotes = () =>
-//   axios({
-//     method: 'get',
-//     url: 'http://localhost:3000/notes',
-//     responseType: 'json',
-//   }).then((data: any) => console.log(JSON.stringify(data)))
+export const getNotes = () =>
+  axios({
+    method: 'get',
+    url: 'http://localhost:3000/notes/',
+    responseType: 'json',
+  }).then((data: any) => console.log(JSON.stringify(data)))
 
-export const getNotes = (): Promise<any> =>
-  new Promise((resolve) => {
-    resolve(data)
-  })
+// export const getNotes = (): Promise<any> =>
+//   new Promise((resolve) => {
+//     resolve(data)
+//   })
