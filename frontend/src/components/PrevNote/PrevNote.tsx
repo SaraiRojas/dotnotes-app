@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContextProvider'
 import { INote } from '../../model/interface'
 import '../../scss/index.scss'
-import { formatDateToString } from '../../utils/formaters'
 import NoteContainer from '../NoteContainer/NoteContainer'
 
 const PrevNode = ({ note }: { note: INote }) => {
