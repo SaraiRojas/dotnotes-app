@@ -4,23 +4,24 @@ import { AuthContext } from '../../context/AuthContextProvider'
 import { getNotes } from '../../api/Notes'
 import PrevNode from '../../components/PrevNote/PrevNote'
 import { Stack } from '@mui/material'
+import { INote } from '../../model/interface'
 
 const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
   console.log(isAuthenticated, user)
 
-  const [notes, setNotes] = useState<any>(null)
+  const [notes, setNotes] = useState<INote[]>([])
 
   useEffect(() => {
-    getNotes().then((data) => {
-      setNotes(data)
+    getNotes().then((data: any) => {
+      setNotes(data.notes)
     })
   }, [])
 
   return (
     <div className="notes-container">
       <Stack spacing={1}>
-        {notes && notes.map((note: any) => <PrevNode note={note} />)}
+        {notes && notes.map((note: INote) => <PrevNode note={note} />)}
       </Stack>
     </div>
   )
