@@ -18,7 +18,7 @@ const NoteContainer = ({
       variant="outlined"
       sx={{ height: cardHeight, width: cardWidth }}
     >
-      <CardContent>{children}</CardContent>
+      <CardContent sx={{ height: '100%' }}>{children}</CardContent>
     </Card>
   )
 }
