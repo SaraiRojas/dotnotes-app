@@ -20,7 +20,7 @@ const Notes = () => {
 
   return (
     <div className="notes-container">
-      <Stack spacing={1}>
+      <Stack spacing={0}>
         {notes && notes.map((note: INote) => <PrevNode note={note} />)}
       </Stack>
     </div>

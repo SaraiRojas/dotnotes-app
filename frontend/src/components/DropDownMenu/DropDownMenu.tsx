@@ -4,8 +4,15 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import { useState } from 'react'
 import '../../scss/index.scss'
+import { IMenuActions } from './interfaces'
 
-const DropDownMenu = ({ Name }: { Name: string | SvgIconComponent }) => {
+const DropDownMenu = ({
+  Name,
+  actions,
+}: {
+  Name: string | SvgIconComponent
+  actions: IMenuActions[]
+}) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
   const open = Boolean(anchorEl)
@@ -43,8 +50,16 @@ const DropDownMenu = ({ Name }: { Name: string | SvgIconComponent }) => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Editar</MenuItem>
-        <MenuItem onClick={handleClose}>Eliminar</MenuItem>
+        {actions.map(({ label, action }) => (
+          <MenuItem
+            key={`id-${label}`}
+            onClick={() => {
+              action(), handleClose()
+            }}
+          >
+            {label}
+          </MenuItem>
+        ))}
       </Menu>
     </div>
   )

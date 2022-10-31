@@ -21,6 +21,22 @@
     font-family: var(--title-typography);
     color: var(--primary);
     font-size: 2em;
-    outline-color: var(--primary);
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_editableText {
+    resize: none;
+    height: 70vh !important;
+    border: none;
+    font-family: var(--general-typography);
+    font-size: 1em;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

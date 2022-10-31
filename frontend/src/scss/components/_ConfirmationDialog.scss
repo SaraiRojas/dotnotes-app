@@ -1,0 +1,18 @@
+div.MuiDialog-container > div.MuiPaper-root {
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+
+.confirmationDialog {
+  &_actions.MuiDialogActions-root {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_icon {
+    cursor: pointer;
+    color: var(--primary);
+  }
+}
