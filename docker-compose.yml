@@ -21,30 +21,30 @@ services:
     networks:
       - internalnet
   
-  nodeapi:
-    container_name: apicontainer
-    build: ./backend
-    image: nodeapi:v1
-    volumes:
-      - $HOME/dotnotes/api:/code
-    ports:
-      - 3000:3000
-    expose:
-      - 3000
-    environment:
-      DB_HOST: mysqldb
-      DB_PORT: 3306
-      DB_USER: 'admin'
-      DB_PASSWORD: 'letmein'
-      DB_NAME: dotnotes_db
-      DB_CONNECTION_LIMIT: 20
-      SERVICE_TAGS: prod
-      SERVICE_NAME: nodeapi
-      SERVER_PORT: 3000
-    depends_on:
-      - mysqldb
-    networks:
-      - internalnet
+  # nodeapi:
+  #   container_name: apicontainer
+  #   build: ./backend
+  #   image: nodeapi:v1
+  #   volumes:
+  #     - $HOME/dotnotes/api:/code
+  #   ports:
+  #     - 3000:3000
+  #   expose:
+  #     - 3000
+  #   environment:
+  #     DB_HOST: mysqldb
+  #     DB_PORT: 3306
+  #     DB_USER: 'admin'
+  #     DB_PASSWORD: 'letmein'
+  #     DB_NAME: dotnotes_db
+  #     DB_CONNECTION_LIMIT: 20
+  #     SERVICE_TAGS: prod
+  #     SERVICE_NAME: nodeapi
+  #     SERVER_PORT: 3000
+  #   depends_on:
+  #     - mysqldb
+  #   networks:
+  #     - internalnet
   
   # viteapp:
   #   container_name: appcontainer
