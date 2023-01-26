@@ -3,7 +3,7 @@ import { Iuser } from '../model/interface'
 
 export const createNewUser = (user: Iuser) => {
   const body = {
-    user_code: user.sub,
+    user: user.sub,
     created_at: user.updated_at,
   }
 

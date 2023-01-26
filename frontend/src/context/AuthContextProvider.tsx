@@ -16,9 +16,9 @@ export const AuthContextProvider = ({
 
   const logIn = () => loginWithRedirect()
 
-  user?.is_user_new && createNewUser(user as Iuser)
+  user?.is_new && createNewUser(user as Iuser)
 
-  user && console.log(user.is_user_new ? 'NewUser' : 'OldUser')
+  user && console.log(user.is_new ? 'NewUser' : 'OldUser')
 
   const logOut = () => logout()
 
