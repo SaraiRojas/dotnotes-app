@@ -1,6 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import React, { useState } from 'react'
-import { createNewUser } from '../api/context'
 import { INote, Iuser } from '../model/interface'
 import { Icontext } from './interface'
 
@@ -15,10 +14,6 @@ export const AuthContextProvider = ({
     useAuth0()
 
   const logIn = () => loginWithRedirect()
-
-  user?.is_new && createNewUser(user as Iuser)
-
-  user && console.log(user.is_new ? 'NewUser' : 'OldUser')
 
   const logOut = () => logout()
 

@@ -402,3 +402,74 @@
 [winston] [22-08-19 11:18:23] info: You can open http://localhost:5000 in your browser.
 [winston] [22-08-19 11:51:17] info: Server running on: 192.168.0.10:5000.
 [winston] [22-08-19 11:51:17] info: You can open http://localhost:5000 in your browser.
+[winston] [23-01-26 17:07:21] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:07:21] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:08:12] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:08:13] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:08:37] info: GET /notes, fetching notes
+[winston] [23-01-26 17:12:13] info: GET /users, fetching users
+[winston] [23-01-26 17:14:40] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:14:40] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:19:49] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:19:49] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:27:00] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:27:00] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:27:51] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:27:51] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:28:12] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:28:12] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:45:31] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:45:31] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:50:33] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 17:50:33] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 17:52:33] info: GET /users, fetching users
+[winston] [23-01-26 18:02:48] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 18:02:48] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 18:03:27] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 18:03:27] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-26 18:04:46] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-26 18:04:46] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-27 12:29:32] info: Server running on: 192.168.86.38:3000.
+[winston] [23-01-27 12:29:32] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-27 12:35:22] info: GET /notes/, fetching notes
+[winston] [23-01-27 12:35:23] info: GET /notes/, fetching notes
+[winston] [23-01-27 12:36:40] info: GET /notes/, fetching notes
+[winston] [23-01-27 12:36:40] info: GET /notes/, fetching notes
+[winston] [23-01-27 12:48:55] info: GET /users, fetching users
+[winston] [23-01-27 12:56:02] info: GET /users, fetching users
+[winston] [23-01-27 12:59:43] info: GET /users, fetching users
+[winston] [23-01-27 14:08:05] info: GET /users, fetching users
+[winston] [23-01-27 14:10:05] info: GET /users, fetching users
+[winston] [23-01-27 14:10:40] info: GET /users, fetching users
+[winston] [23-01-27 14:11:30] info: POST /users, creating and storing user
+[winston] [23-01-27 14:11:47] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:11:47] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:12:22] info: POST /users, creating and storing user
+[winston] [23-01-27 14:12:37] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:12:37] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:12:53] info: GET /users, fetching users
+[winston] [23-01-27 14:14:19] info: GET /users, fetching users
+[winston] [23-01-27 14:15:10] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:15:10] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:15:50] info: GET /users, fetching users
+[winston] [23-01-27 14:18:16] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:18:16] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:21:11] info: POST /users, creating and storing user
+[winston] [23-01-27 14:21:24] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:21:24] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:22:45] info: GET /users, fetching users
+[winston] [23-01-27 14:23:14] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:23:14] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:28:50] info: POST /users, creating and storing user
+[winston] [23-01-27 14:29:03] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:29:03] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:29:49] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:29:49] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:42:05] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:42:05] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:46:51] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:46:52] info: GET /notes/, fetching notes
+[winston] [23-01-27 14:54:42] info: GET /users, fetching users
+[winston] [23-01-27 15:07:54] info: GET /users, fetching users
+[winston] [23-01-30 15:51:01] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 15:51:01] info: You can open http://localhost:3000 in your browser.
