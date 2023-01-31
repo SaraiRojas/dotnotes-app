@@ -18,13 +18,15 @@
     "@mui/material": "5.9.2",
     "@mui/styled-engine-sc": "5.8.0",
     "axios": "0.27.2",
-    "date-fns": "^2.29.3",
+    "date-fns": "2.29.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.3.0",
-    "styled-components": "5.3.5"
+    "styled-components": "5.3.5",
+    "vite-plugin-svgr": "2.4.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
     "@types/node": "18.7.5",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",

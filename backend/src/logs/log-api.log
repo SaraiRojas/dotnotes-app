@@ -473,3 +473,127 @@
 [winston] [23-01-27 15:07:54] info: GET /users, fetching users
 [winston] [23-01-30 15:51:01] info: Server running on: 192.168.8.80:3000.
 [winston] [23-01-30 15:51:01] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 16:05:45] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 16:05:45] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 16:06:57] info: GET /notes/, fetching notes
+[winston] [23-01-30 16:06:58] info: GET /notes/, fetching notes
+[winston] [23-01-30 16:07:14] info: GET /notes, fetching notes
+[winston] [23-01-30 16:08:42] info: GET /notes/30, fetching note with id: 30
+[winston] [23-01-30 16:09:03] info: GET /notes, fetching notes
+[winston] [23-01-30 16:09:24] info: GET /notes/10, fetching note with id: 10
+[winston] [23-01-30 16:09:54] info: GET /notes, fetching notes
+[winston] [23-01-30 16:12:53] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 16:12:53] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 16:13:08] info: GET /notes/10, fetching note with id: 10
+[winston] [23-01-30 16:13:41] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 16:13:41] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 16:13:57] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 16:13:57] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 16:14:00] info: GET /notes/5, fetching note with id: 5
+[winston] [23-01-30 17:10:31] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-30 17:10:31] info: You can open http://localhost:3000 in your browser.
+[winston] [23-01-30 17:14:12] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:14:13] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:14:42] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:14:56] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:14:57] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:15:22] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:15:22] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:16:35] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:16:35] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:18:18] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:18:50] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:18:50] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:20:00] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:23:51] info: GET /notes, fetching notes
+[winston] [23-01-30 17:24:08] info: GET /notes/90, fetching note with id: 90
+[winston] [23-01-30 17:24:14] info: GET /notes, fetching notes
+[winston] [23-01-30 17:27:03] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:27:12] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:27:50] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:33:14] info: GET /notes/, fetching notes
+[winston] [23-01-30 17:33:38] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:00:54] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:00:54] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:01:26] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:01:53] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:07:16] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:09:12] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:09:12] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:11:53] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:13:25] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:18:59] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:18:59] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:20:35] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:20:35] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:23:30] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:23:44] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:23:44] info: GET /notes/, fetching notes
+[winston] [23-01-30 18:24:34] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:32:27] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:32:27] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:32:52] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:33:11] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:33:11] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:33:58] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:37:08] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:37:46] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:39:52] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:40:35] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:40:41] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:41:00] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:41:18] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:41:46] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:49:12] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:49:58] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:52:41] info: GET /notes/, fetching notes
+[winston] [23-01-31 11:53:00] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:00:44] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:00:55] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:01:03] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:01:08] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:02:24] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:11:51] info: GET /users, fetching users
+[winston] [23-01-31 12:15:52] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:17:05] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:21:37] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:21:46] info: GET /users/search?usercode=10, fetching user with code '10'
+[winston] [23-01-31 12:22:10] info: GET /users/search?usercode=73-104-4497, fetching user with code '73-104-4497'
+[winston] [23-01-31 12:22:32] info: GET /users, fetching users
+[winston] [23-01-31 12:22:52] info: GET /users/search?usercode=10, fetching user with code '10'
+[winston] [23-01-31 12:23:10] info: GET /users/search?usercode=67, fetching user with code '67'
+[winston] [23-01-31 12:23:32] info: GET /users/search?usercode=10, fetching user with code '10'
+[winston] [23-01-31 12:24:40] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:26:59] info: GET /notes/, fetching notes
+[winston] [23-01-31 12:30:12] info: GET /notes/search?usercode=undefined, fetching notes that contain 'undefined'
+[winston] [23-01-31 12:30:54] info: GET /notes/search?usercode=auth0|63d43401038558e5ad4592a3, fetching notes that contain 'undefined'
+[winston] [23-01-31 12:31:13] info: GET /notes/search?usercode=auth0|63d43401038558e5ad4592a3, fetching notes that contain 'undefined'
+[winston] [23-01-31 12:31:13] info: GET /notes/search?usercode=auth0|63d43401038558e5ad4592a3, fetching notes that contain 'undefined'
+[winston] [23-01-31 12:32:05] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:32:18] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:32:18] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:32:46] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:32:57] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:32:58] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:33:36] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:33:53] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:33:53] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:34:37] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:35:32] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:36:02] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
+[winston] [23-01-31 12:36:43] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:36:55] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:36:55] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:37:42] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:44:55] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:44:56] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:45:02] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:45:02] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:45:59] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:45:59] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:48:57] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:48:57] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:49:03] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 12:49:22] info: GET /users/search?usercode=auth0|63d43401038558e5ad4592a3, fetching user with code 'auth0|63d43401038558e5ad4592a3'
+[winston] [23-01-31 13:35:13] info: Server running on: 192.168.8.80:3000.
+[winston] [23-01-31 13:35:13] info: You can open http://localhost:3000 in your browser.
