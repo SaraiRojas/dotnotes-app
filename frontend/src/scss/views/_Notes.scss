@@ -1,5 +1,6 @@
 .notes-container {
   padding: 0 5%;
+  height: 70vh;
 
   &__no-notes-found {
     padding-top: 10%;
@@ -13,5 +14,29 @@
     color: rgba(255, 51, 102, 0.15);
     font-size: 2em;
     font-weight: 600;
+  }
+}
+
+div {
+  &.MuiSpeedDial-root {
+    position: 'absolute';
+    bottom: 5%;
+    right: 5%;
+  }
+}
+
+button {
+  &.MuiButtonBase-root {
+    background-color: var(--primary);
+  }
+
+  &.MuiButtonBase-root:hover {
+    background-color: var(--primary);
+  }
+}
+
+span {
+  &.MuiSpeedDialIcon-root {
+    color: black;
   }
 }
