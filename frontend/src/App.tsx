@@ -13,6 +13,7 @@ function App() {
       <Route path="/*" element={<ProtectedRoute component={LayOut} />}>
         <Route path="notes" element={<Notes />} />
         <Route path="title" element={<FullNote />} />
+        <Route path="new_note" element={<FullNote isNewNote={true}/>} />
       </Route>
     )
   }

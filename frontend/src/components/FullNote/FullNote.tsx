@@ -15,14 +15,14 @@ import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
 import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
 
-const FullNote = () => {
+const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
   const { noteInfo } = useContext(AuthContext)
 
   const navigate = useNavigate()
 
   const [open, setOpen] = useState(false)
   const [values, setValues] = useState<INote>(noteInfo)
-  const [isEditable, setIsEditable] = useState(false)
+  const [isEditable, setIsEditable] = useState(isNewNote)
 
   const handleChange = (value: string, key: string) => {
     const newValues = {
@@ -63,7 +63,7 @@ const FullNote = () => {
           ) : (
             <ClearIcon
               className="fullNote_icon"
-              onClick={() => setIsEditable(false)}
+              onClick={() => isNewNote ? navigate('/notes') : setIsEditable(false)}
             />
           )}
         </div>

@@ -9,10 +9,13 @@ import { ReactComponent as Icon } from '../../assets/sad-face.svg'
 import _ from 'lodash'
 import SpeedDial from '@mui/material/SpeedDial'
 import SpeedDialIcon from '@mui/material/SpeedDialIcon'
+import { useNavigate } from 'react-router-dom'
 
 const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
-  console.log(isAuthenticated, user)
+  // console.log(isAuthenticated, user)
+
+  const navigate = useNavigate()
 
   const [notes, setNotes] = useState<INote[]>([])
 
@@ -50,6 +53,7 @@ const Notes = () => {
         ariaLabel="Create new note"
         sx={{ position: 'absolute' }}
         icon={<SpeedDialIcon />}
+        onClick = {() => navigate('/new_note')}
       />
     </div>
   )
