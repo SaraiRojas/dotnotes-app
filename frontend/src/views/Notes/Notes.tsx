@@ -10,6 +10,7 @@ import _ from 'lodash'
 import SpeedDial from '@mui/material/SpeedDial'
 import SpeedDialIcon from '@mui/material/SpeedDialIcon'
 import { useNavigate } from 'react-router-dom'
+import LoadingNodes from '../../components/LoadingNotes/LoadingNodes'
 
 const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
@@ -18,6 +19,7 @@ const Notes = () => {
   const navigate = useNavigate()
 
   const [notes, setNotes] = useState<INote[]>([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     getNotes(user.sub)
@@ -27,11 +29,14 @@ const Notes = () => {
       .catch(() => {
         setNotes([])
       })
+      .finally(()=>
+        setIsLoading(false)
+      )
   }, [])
 
-  return (
-    <div className="notes-container">
-      {!_.isEmpty(notes) ? (
+  const renderNotes = () => {
+    return (
+      !_.isEmpty(notes) ? (
         <Stack spacing={0}>
           {notes && notes.map((note: INote) => <PrevNode note={note} />)}
         </Stack>
@@ -48,15 +53,26 @@ const Notes = () => {
             }}
           />
         </div>
-      )}
-      <SpeedDial
-        ariaLabel="Create new note"
-        sx={{ position: 'absolute' }}
-        icon={<SpeedDialIcon />}
-        onClick = {() => navigate('/new_note')}
-      />
-    </div>
-  )
+      )
+    )
+  }
+
+  return (
+      <div className="notes-container">
+        {isLoading ? (
+            <LoadingNodes/>
+          ):(
+            renderNotes()
+          )
+        }
+        <SpeedDial
+          ariaLabel="Create new note"
+          sx={{ position: 'absolute' }}
+          icon={<SpeedDialIcon />}
+          onClick = {() => navigate('/new_note')}
+        />
+      </div>
+    )
 }
 
 export default Notes
