@@ -8,9 +8,10 @@ import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
 import { InitNewNoteValues } from '../../../utils/utils'
 import {INoteForm} from './interface'
+import { saveNewNote } from '../../../api/Notes'
 
 const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
-  const { noteInfo, setNoteInfo } = useContext(AuthContext)
+  const { noteInfo, setNoteInfo, user } = useContext(AuthContext)
 
   const navigate = useNavigate()
 
@@ -26,12 +27,24 @@ const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
     setValues(newValues)
   }
 
+  const handleSaveNote = () => {
+    const body = {
+      title: values.title,
+      content: values.content,
+      user_id: user.sub,
+    }
+    saveNewNote(body)
+  }
+
   return (
     <>
       <div className="fullNote_actions">
         <DoneIcon
           className="fullNote_icon"
-          onClick={() => {setIsEditable(false)}}
+          onClick={() => {
+            setIsEditable(false)
+            handleSaveNote()
+          }}
         />
         <ClearIcon
           className="fullNote_icon"
@@ -54,7 +67,7 @@ const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
           className="fullNote_editableText"
           value={values.content}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-            handleChange(e.target.value, 'text')
+            handleChange(e.target.value, 'content')
           }
         />
       </div>
