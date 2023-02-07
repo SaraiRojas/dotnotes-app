@@ -723,3 +723,7 @@
 [winston] [23-02-07 13:49:09] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
 [winston] [23-02-07 13:49:09] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
 [winston] [23-02-07 14:07:10] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-02-07 15:09:47] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-02-07 15:09:47] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-02-07 15:09:56] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-02-07 15:09:56] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'

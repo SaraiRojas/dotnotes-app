@@ -26,11 +26,11 @@ div {
 }
 
 button {
-  &.MuiButtonBase-root {
+  &.MuiButtonBase-root.MuiSpeedDial-fab {
     background-color: var(--primary);
   }
 
-  &.MuiButtonBase-root:hover {
+  &.MuiButtonBase-root.MuiSpeedDial-fab:hover {
     background-color: var(--primary);
   }
 }
