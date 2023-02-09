@@ -1,11 +1,11 @@
 import React from 'react'
+import CircularProgress from '@mui/material/CircularProgress'
+import '../../scss/index.scss'
 
 export const PageLoader: React.FC = () => {
-  const loadingImg = 'https://cdn.auth0.com/blog/hello-auth0/loader.svg'
-
   return (
     <div className="loader">
-      <img src={loadingImg} alt="Loading..." />
+      <CircularProgress color="inherit" size={80}/>
     </div>
   )
 }
