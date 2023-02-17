@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../../scss/index.scss'
 import SignInButton from '../../components/SigInButton/SigInButton'
+import { AuthContext } from '../../context/AuthContextProvider'
 
 const LogIn = () => {
+  const { logIn } = useContext(AuthContext)
   return (
     <main>
       <h1>
@@ -12,7 +14,7 @@ const LogIn = () => {
       <h2>Start taking notes</h2>
       <SignInButton />
       <p>
-        Don't have an account yet? <a>Register</a>
+        Don't have an account yet? <a className={'logIn__registation'} onClick={() => logIn()}>Register</a>
       </p>
     </main>
   )
