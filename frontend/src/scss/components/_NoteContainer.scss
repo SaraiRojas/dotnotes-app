@@ -6,3 +6,10 @@
     margin-bottom: 1em;
   }
 }
+
+.notes-container {
+  &__loading {
+    min-width: 280px;
+    width: 90vw;
+  }
+}

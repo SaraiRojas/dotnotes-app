@@ -77,6 +77,11 @@ p {
 a {
   color: var(--primary);
   text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
 }
 
 img {

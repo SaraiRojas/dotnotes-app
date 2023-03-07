@@ -7,41 +7,72 @@ import { Stack } from '@mui/material'
 import { INote } from '../../model/interface'
 import { ReactComponent as Icon } from '../../assets/sad-face.svg'
 import _ from 'lodash'
+import SpeedDial from '@mui/material/SpeedDial'
+import SpeedDialIcon from '@mui/material/SpeedDialIcon'
+import { useNavigate } from 'react-router-dom'
+import LoadingNodes from '../../components/LoadingNotes/LoadingNodes'
 
 const Notes = () => {
   const { isAuthenticated, user } = useContext(AuthContext)
-  console.log(isAuthenticated, user)
+  // console.log(isAuthenticated, user)
 
-  const [notes, setNotes] = useState<INote[]>(null)
+  const navigate = useNavigate()
+
+  const [notes, setNotes] = useState<INote[]>([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     getNotes(user.sub)
       .then((data: any) => {
-        console.log(data)
         setNotes(data)
       })
-      .catch((error) => {
+      .catch(() => {
         setNotes([])
       })
+      .finally(()=>
+        setIsLoading(false)
+      )
   }, [])
 
-  return !_.isEmpty(notes) ? (
-    <div className="notes-container">
-      <Stack spacing={0}>
-        {notes && notes.map((note: INote) => <PrevNode note={note} />)}
-      </Stack>
-    </div>
-  ) : (
-    <div className="notes-container__no-notes-found">
-      <p className="notes-container__no-notes-message">
-        No se encontrarón notas
-      </p>
-      <Icon
-        className="notes-container__icon-sad-face"
-        style={{ color: 'rgba(255, 51, 102, 0.15)', transform: 'scale(0.8)' }}
-      />
-    </div>
-  )
+  const renderNotes = () => {
+    return (
+      !_.isEmpty(notes) ? (
+        <Stack spacing={0}>
+          {notes && notes.map((note: INote) => <PrevNode note={note} />)}
+        </Stack>
+      ) : (
+        <div className="notes-container__no-notes-found">
+          <p className="notes-container__no-notes-message">
+            No se encontrarón notas
+          </p>
+          <Icon
+            className="notes-container__icon-sad-face"
+            style={{
+              color: 'rgba(255, 51, 102, 0.15)',
+              transform: 'scale(0.6)',
+            }}
+          />
+        </div>
+      )
+    )
+  }
+
+  return (
+      <div className="notes-container">
+        {isLoading ? (
+            <LoadingNodes/>
+          ):(
+            renderNotes()
+          )
+        }
+        <SpeedDial
+          ariaLabel="Create new note"
+          sx={{ position: 'absolute' }}
+          icon={<SpeedDialIcon />}
+          onClick = {() => navigate('/new_note')}
+        />
+      </div>
+    )
 }
 
 export default Notes

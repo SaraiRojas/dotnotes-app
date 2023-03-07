@@ -12,6 +12,11 @@ Button {
     font-weight: bold;
     width: 9em;
 
+    &:hover {
+      background-color: rgba(255, 51, 102, 0.15);
+      border: 3px solid #ff3366;
+    }
+
     @include a.breakpoints-up(small) {
       font-size: 1.5em;
       width: 12em;

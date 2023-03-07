@@ -13,8 +13,7 @@ export interface INote {
   id: number
   title: string
   content: string
-  user_id: number
+  user_id: string
   created_at: string
   updated_at: string
-  user: Iuser
 }
