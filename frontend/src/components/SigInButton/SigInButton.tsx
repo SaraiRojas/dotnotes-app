@@ -7,7 +7,7 @@ const SignInButton = () => {
   const { logIn } = useContext(AuthContext)
 
   return (
-    <Button className={'Button'} variant="outlined" onClick={() => logIn()}>
+    <Button className={'signInButton'} variant="outlined" onClick={() => logIn()}>
       Sign In
     </Button>
   )

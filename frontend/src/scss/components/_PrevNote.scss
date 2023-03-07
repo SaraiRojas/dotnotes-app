@@ -24,3 +24,11 @@
 .MuiCardActionArea-focusHighlight {
   height: 125px;
 }
+
+.NoteContainer > span.MuiTouchRipple-root {
+  height: 125px;
+}
+
+span.MuiCardActionArea-focusHighlight, span.MuiTouchRipple-root {
+  color: var(--primary);
+}

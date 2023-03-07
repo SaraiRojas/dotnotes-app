@@ -12,7 +12,7 @@ Button {
     font-weight: bold;
     width: 9em;
 
-    &:hover {
+    &.signInButton:hover {
       background-color: rgba(255, 51, 102, 0.15);
       border: 3px solid #ff3366;
     }
