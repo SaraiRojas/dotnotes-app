@@ -6,7 +6,17 @@
       width: fit-content;
       padding: 0;
     }
+
+    &.MuiButton-root:hover {
+      background-color: transparent;
+      border: none;
+    }
+
+    & > span.MuiTouchRipple-root {
+      color: transparent;
+    }
   }
+
 
   &_icon {
     &.MuiSvgIcon-root {

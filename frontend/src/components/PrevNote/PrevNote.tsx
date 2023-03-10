@@ -12,7 +12,7 @@ const PrevNode = ({ note }: { note: INote }) => {
   const handleClick = () => setNoteInfo(note)
 
   return (
-    <CardActionArea component={Link} to="/title" onClick={handleClick}>
+    <CardActionArea className={'NoteContainer'} component={Link} to="/title" onClick={handleClick}>
       <NoteContainer cardHeight="125px">
         <Typography className={'NoteContainer_title'}>{note.title}</Typography>
         <Typography className={'NoteContainer_date'}>

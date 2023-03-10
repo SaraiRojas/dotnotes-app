@@ -24,7 +24,7 @@ const ConfirmationDialog = ({
   message,
   title,
   open,
-  handleAcept,
+  handleAccept,
   onClose,
 }: IConfirmationDialog) => {
   return (
@@ -48,7 +48,7 @@ const ConfirmationDialog = ({
           />
           <DoneIcon
             className="confirmationDialog_icon"
-            onClick={() => handleAcept()}
+            onClick={() => handleAccept()}
           />
         </DialogActions>
       </Dialog>

@@ -54,7 +54,7 @@ h2 {
   }
 }
 
-span {
+span.logIn_appname_dot {
   color: var(--primary);
 }
 
@@ -85,7 +85,7 @@ a:hover {
 }
 
 img {
-  width: 90%;
+  width: 80%;
   justify-self: end;
 
   @include a.breakpoints-up(large) {

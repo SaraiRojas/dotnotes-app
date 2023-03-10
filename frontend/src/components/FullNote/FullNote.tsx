@@ -13,6 +13,7 @@ import { IMenuActions } from '../DropDownMenu/interfaces'
 import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
 import { InitNewNoteValues } from '../../utils/utils'
 import NoteForm from './noteForm/noteForm'
+import { deleteNote } from '../../api/Notes'
 
 const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
   const { noteInfo, setNoteInfo } = useContext(AuthContext)
@@ -27,12 +28,23 @@ const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
     { label: 'Eliminar', action: () => setOpen(true) },
   ]
 
+  const handleAccept = () => {
+    setOpen(false)
+    deleteNote(noteInfo.id)
+      .then(()=>{
+        navigate('/notes')
+      })
+      .catch(()=>{
+        console.log('Note was not deleted')
+      })
+  }
+
   return (
     <>
       <ConfirmationDialog
         message="¿Desea eliminar la nota?"
         open={open}
-        handleAcept={() => setOpen(false)}
+        handleAccept={handleAccept}
         onClose={() => setOpen(false)}
       />
       <NoteContainer cardHeight="100vh" cardWidth="90vw">

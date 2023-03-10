@@ -8,7 +8,7 @@ const LogIn = () => {
   return (
     <main>
       <h1>
-        DotNotes<span>.</span>
+        DotNotes<span className="logIn_appname_dot">.</span>
       </h1>
       <img src="/ImgsignInImg.png" alt="girl taking notes"></img>
       <h2>Start taking notes</h2>
