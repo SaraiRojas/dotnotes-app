@@ -2,6 +2,6 @@ export interface IConfirmationDialog {
   message: string
   title?: string
   open: boolean
-  handleAcept: Function
+  handleAccept: Function
   onClose: Function
 }

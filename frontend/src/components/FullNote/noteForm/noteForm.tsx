@@ -8,7 +8,7 @@ import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
 import { InitNewNoteValues } from '../../../utils/utils'
 import {INoteForm} from './interface'
-import { saveNewNote } from '../../../api/Notes'
+import { saveNewNote, updateNote } from '../../../api/Notes'
 
 const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
   const { noteInfo, setNoteInfo, user } = useContext(AuthContext)
@@ -33,7 +33,7 @@ const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
       content: values.content,
       user_id: user.sub,
     }
-    saveNewNote(body)
+    isNewNote ? saveNewNote(body) : updateNote(body, noteInfo.id)
   }
 
   return (
