@@ -27,7 +27,7 @@
     "http-errors": "2.0.0",
     "ip": "1.1.8",
     "mysql2": "2.3.3",
-    "sequelize": "6.21.3",
+    "sequelize": "6.29.0",
     "winston": "3.8.1"
   },
   "devDependencies": {
