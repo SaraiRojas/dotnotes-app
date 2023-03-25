@@ -1,6 +1,4 @@
 import { Typography } from '@mui/material'
-import { useContext } from 'react'
-import { AuthContext } from '../../context/AuthContextProvider'
 import '../../scss/index.scss'
 import { formatDateToString } from '../../utils/formaters'
 import NoteContainer from '../NoteContainer/NoteContainer'
@@ -14,14 +12,16 @@ import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
 import { InitNewNoteValues } from '../../utils/utils'
 import NoteForm from './noteForm/noteForm'
 import { deleteNote } from '../../api/Notes'
+import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
 
 const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
-  const { noteInfo, setNoteInfo } = useContext(AuthContext)
+  const { noteInfo, setNoteInfo } = useNoteInfoContext()
 
   const navigate = useNavigate()
 
   const [open, setOpen] = useState(false)
   const [isEditable, setIsEditable] = useState(isNewNote)
+  //const { displayAlert } = useSnackBars()
 
   const noteActions: IMenuActions[] = [
     { label: 'Editar', action: () => setIsEditable(true) },
@@ -35,7 +35,7 @@ const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
         navigate('/notes')
       })
       .catch(()=>{
-        console.log('Note was not deleted')
+        //displayAlert('Something went wrong. Please try deleting the note again', 'error')
       })
   }
 

@@ -1,13 +1,12 @@
 import { CardActionArea, Typography } from '@mui/material'
-import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { AuthContext } from '../../context/AuthContextProvider'
+import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
 import { INote } from '../../model/interface'
 import '../../scss/index.scss'
 import NoteContainer from '../NoteContainer/NoteContainer'
 
 const PrevNode = ({ note }: { note: INote }) => {
-  const { setNoteInfo } = useContext(AuthContext)
+  const { setNoteInfo } = useNoteInfoContext()
 
   const handleClick = () => setNoteInfo(note)
 

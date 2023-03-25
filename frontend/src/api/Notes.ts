@@ -1,11 +1,10 @@
 import axios from 'axios'
-import { useContext } from 'react'
-import { AuthContext } from '../context/AuthContextProvider'
 
 export const getNotes = (userId: string) =>
   axios({
     method: 'get',
-    url: `http://localhost:3000/users/search?usercode=${userId}`,
+    //url: `http://localhost:3000/users/search?usercode=${userId}`,
+    url: `http://localhost:3000/users/search?usercode=32-861-5209`,
     responseType: 'json',
   }).then((data: any) => data.data.data.user[0].notes)
 
