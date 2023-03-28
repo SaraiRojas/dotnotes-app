@@ -1,11 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LogIn from './views/LogIn/LogIn'
 import Notes from './views/Notes/Notes'
-import { AuthContextProvider, AuthContext } from './context/AuthContextProvider'
+import { AuthContextProvider } from './context/AuthContextProvider'
 import { ProtectedRoute } from './router/ProtectedRoute'
 import LayOut from './components/Layouts/LayOut'
 import FullNote from './components/FullNote/FullNote'
+import { NoteInfoContextProvider } from './context/NoteInfoContextProvider'
+import { SnackBarsContextProvider } from './context/SnackBarsProvider'
 
 function App() {
   const privateRoutes = () => {
@@ -13,7 +15,7 @@ function App() {
       <Route path="/*" element={<ProtectedRoute component={LayOut} />}>
         <Route path="notes" element={<Notes />} />
         <Route path="title" element={<FullNote />} />
-        <Route path="new_note" element={<FullNote isNewNote={true}/>} />
+        <Route path="new_note" element={<FullNote isNewNote={true} />} />
       </Route>
     )
   }
@@ -21,10 +23,14 @@ function App() {
   return (
     <Router>
       <AuthContextProvider>
-        <Routes>
-          <Route path="/" element={<LogIn />} />
-          {privateRoutes()}
-        </Routes>
+        <NoteInfoContextProvider>
+          <SnackBarsContextProvider>
+            <Routes>
+              <Route path="/" element={<LogIn />} />
+              {privateRoutes()}
+            </Routes>
+          </SnackBarsContextProvider>
+        </NoteInfoContextProvider>
       </AuthContextProvider>
     </Router>
   )

@@ -1,4 +1,4 @@
-export const InitNewNoteValues =  {
+export const InitNewNoteValues = {
   id: 0,
   title: 'Add title here ...',
   content: 'Start writing here ...',

@@ -1,7 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
-import React, { useState } from 'react'
-import { INote, Iuser } from '../model/interface'
-import { InitNewNoteValues } from '../utils/utils'
+import React, { useContext } from 'react'
 import { Icontext } from './interface'
 
 export const AuthContext = React.createContext({} as Icontext)
@@ -18,8 +16,6 @@ export const AuthContextProvider = ({
 
   const logOut = () => logout()
 
-  const [noteInfo, setNoteInfo] = useState<INote>(InitNewNoteValues)
-
   return (
     <AuthContext.Provider
       value={{
@@ -28,11 +24,11 @@ export const AuthContextProvider = ({
         logOut,
         user,
         isLoading,
-        noteInfo,
-        setNoteInfo,
       }}
     >
       {children}
     </AuthContext.Provider>
   )
 }
+
+export const useAuthContext = () => useContext(AuthContext)
