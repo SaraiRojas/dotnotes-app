@@ -10,7 +10,6 @@ export const NoteInfoContextProvider = ({
 }: {
   children: JSX.Element
 }) => {
-
   const [noteInfo, setNoteInfo] = useState<INote>(InitNewNoteValues)
 
   return (

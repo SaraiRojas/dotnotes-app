@@ -1,5 +1,4 @@
-import { useContext } from 'react'
-import { AuthContext } from '../../../context/AuthContextProvider'
+import { useAuthContext } from '../../../context/AuthContextProvider'
 import '../../../scss/index.scss'
 import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
@@ -7,17 +6,17 @@ import { INote } from '../../../model/interface'
 import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
 import { InitNewNoteValues } from '../../../utils/utils'
-import {INoteForm} from './interface'
+import { INoteForm } from './interface'
 import { saveNewNote, updateNote } from '../../../api/Notes'
+import { useNoteInfoContext } from '../../../context/NoteInfoContextProvider'
 
-const NoteForm = ({setIsEditable, isNewNote}:INoteForm) => {
-  const { noteInfo, setNoteInfo, user } = useContext(AuthContext)
+const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
+  const { user } = useAuthContext()
+  const { noteInfo, setNoteInfo } = useNoteInfoContext()
 
   const navigate = useNavigate()
 
   const [values, setValues] = useState<INote>(noteInfo)
-
-  // console.log(noteInfo)
 
   const handleChange = (value: string, key: string) => {
     const newValues = {

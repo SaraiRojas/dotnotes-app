@@ -14,7 +14,10 @@ const LogIn = () => {
       <h2>Start taking notes</h2>
       <SignInButton />
       <p>
-        Don't have an account yet? <a className={'logIn__registation'} onClick={() => logIn()}>Register</a>
+        Don't have an account yet?{' '}
+        <a className={'logIn__registation'} onClick={() => logIn()}>
+          Register
+        </a>
       </p>
     </main>
   )

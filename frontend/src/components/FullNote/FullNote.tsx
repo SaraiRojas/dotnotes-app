@@ -13,15 +13,16 @@ import { InitNewNoteValues } from '../../utils/utils'
 import NoteForm from './noteForm/noteForm'
 import { deleteNote } from '../../api/Notes'
 import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
+import { useSnackBarsContext } from '../../context/SnackBarsProvider'
 
-const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
+const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
   const { noteInfo, setNoteInfo } = useNoteInfoContext()
 
   const navigate = useNavigate()
 
   const [open, setOpen] = useState(false)
   const [isEditable, setIsEditable] = useState(isNewNote)
-  //const { displayAlert } = useSnackBars()
+  const { displayAlert } = useSnackBarsContext()
 
   const noteActions: IMenuActions[] = [
     { label: 'Editar', action: () => setIsEditable(true) },
@@ -31,11 +32,11 @@ const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
   const handleAccept = () => {
     setOpen(false)
     deleteNote(noteInfo.id)
-      .then(()=>{
+      .then(() => {
         navigate('/notes')
       })
-      .catch(()=>{
-        //displayAlert('Something went wrong. Please try deleting the note again', 'error')
+      .catch(() => {
+        displayAlert('Something went wrong.', 'error')
       })
   }
 
@@ -48,17 +49,16 @@ const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
         onClose={() => setOpen(false)}
       />
       <NoteContainer cardHeight="100vh" cardWidth="90vw">
-      {isEditable ? (
-          <NoteForm
-            setIsEditable={setIsEditable}
-            isNewNote={isNewNote}
-          />
+        {isEditable ? (
+          <NoteForm setIsEditable={setIsEditable} isNewNote={isNewNote} />
         ) : (
           <>
             <div className="fullNote_actions">
               <ArrowBackIcon
                 className="fullNote_icon"
-                onClick={() => {navigate('/notes'), setNoteInfo(InitNewNoteValues)}}
+                onClick={() => {
+                  navigate('/notes'), setNoteInfo(InitNewNoteValues)
+                }}
               />
               <DropDownMenu Name={MoreHorizIcon} actions={noteActions} />
             </div>
@@ -73,7 +73,7 @@ const FullNote = ({isNewNote = false}:{isNewNote?: boolean}) => {
                 {noteInfo.content}
               </Typography>
             </div>
-          </>        
+          </>
         )}
       </NoteContainer>
     </>

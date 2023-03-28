@@ -23,7 +23,7 @@ export const AuthContextProvider = ({
         logIn,
         logOut,
         user,
-        isLoading
+        isLoading,
       }}
     >
       {children}

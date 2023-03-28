@@ -7,6 +7,7 @@ import { ProtectedRoute } from './router/ProtectedRoute'
 import LayOut from './components/Layouts/LayOut'
 import FullNote from './components/FullNote/FullNote'
 import { NoteInfoContextProvider } from './context/NoteInfoContextProvider'
+import { SnackBarsContextProvider } from './context/SnackBarsProvider'
 
 function App() {
   const privateRoutes = () => {
@@ -14,7 +15,7 @@ function App() {
       <Route path="/*" element={<ProtectedRoute component={LayOut} />}>
         <Route path="notes" element={<Notes />} />
         <Route path="title" element={<FullNote />} />
-        <Route path="new_note" element={<FullNote isNewNote={true}/>} />
+        <Route path="new_note" element={<FullNote isNewNote={true} />} />
       </Route>
     )
   }
@@ -23,10 +24,12 @@ function App() {
     <Router>
       <AuthContextProvider>
         <NoteInfoContextProvider>
-          <Routes>
-            <Route path="/" element={<LogIn />} />
-            {privateRoutes()}
-          </Routes>
+          <SnackBarsContextProvider>
+            <Routes>
+              <Route path="/" element={<LogIn />} />
+              {privateRoutes()}
+            </Routes>
+          </SnackBarsContextProvider>
         </NoteInfoContextProvider>
       </AuthContextProvider>
     </Router>
