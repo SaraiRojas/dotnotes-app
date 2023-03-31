@@ -32,7 +32,15 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
       content: values.content,
       user_id: user.sub,
     }
-    isNewNote ? saveNewNote(body) : updateNote(body, noteInfo.id)
+    isNewNote
+      ? saveNewNote(body)
+      : updateNote(body, noteInfo.id).then(() => {
+          setNoteInfo({
+            ...noteInfo,
+            title: values.title,
+            content: values.content,
+          })
+        })
   }
 
   return (
@@ -48,8 +56,9 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
         <ClearIcon
           className="fullNote_icon"
           onClick={() => {
-            isNewNote ? navigate('/notes') : setIsEditable(false)
-            setNoteInfo(InitNewNoteValues)
+            isNewNote
+              ? (navigate('/notes'), setNoteInfo(InitNewNoteValues))
+              : setIsEditable(false)
           }}
         />
       </div>
