@@ -1,13 +1,13 @@
 import { useAuthContext } from '../../../context/AuthContextProvider'
 import '../../../scss/index.scss'
 import { useNavigate } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { INote } from '../../../model/interface'
 import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
 import { INIT_NEW_NOTE_VALUES } from '../../../utils/constants'
 import { INoteForm } from './interface'
-import { saveNewNote, updateNote } from '../../../api/Notes'
+import { getUserCode, saveNewNote, updateNote } from '../../../api/Notes'
 import { useNoteInfoContext } from '../../../context/NoteInfoContextProvider'
 import { useSnackBarsContext } from '../../../context/SnackBarsProvider'
 
@@ -19,6 +19,15 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
   const navigate = useNavigate()
 
   const [values, setValues] = useState<INote>(noteInfo)
+  const [userCode, setUserCode] = useState<number>(0)
+
+  useEffect(() => {
+    if (isNewNote) {
+      getUserCode(user.sub).then((userInfo) => {
+        setUserCode(userInfo)
+      })
+    }
+  }, [])
 
   const handleChange = (value: string, key: string) => {
     const newValues = {
@@ -35,8 +44,13 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
       user_id: user.sub,
     }
     isNewNote
-      ? saveNewNote(body)
+      ? saveNewNote({...body, userid: userCode})
           .then(() => {
+            setNoteInfo({
+              ...noteInfo,
+              title: values.title,
+              content: values.content,
+            })
             setIsEditable(false)
           })
           .catch(() => {

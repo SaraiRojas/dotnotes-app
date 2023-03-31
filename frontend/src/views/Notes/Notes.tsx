@@ -13,8 +13,7 @@ import { useNavigate } from 'react-router-dom'
 import LoadingNodes from '../../components/LoadingNotes/LoadingNodes'
 
 const Notes = () => {
-  const { isAuthenticated, user } = useContext(AuthContext)
-  // console.log(isAuthenticated, user)
+  const { user } = useContext(AuthContext)
 
   const navigate = useNavigate()
 
