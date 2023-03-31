@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { INote } from '../../../model/interface'
 import DoneIcon from '@mui/icons-material/Done'
 import ClearIcon from '@mui/icons-material/Clear'
-import { InitNewNoteValues } from '../../../utils/utils'
+import { INIT_NEW_NOTE_VALUES } from '../../../utils/constants'
 import { INoteForm } from './interface'
 import { saveNewNote, updateNote } from '../../../api/Notes'
 import { useNoteInfoContext } from '../../../context/NoteInfoContextProvider'
@@ -32,7 +32,15 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
       content: values.content,
       user_id: user.sub,
     }
-    isNewNote ? saveNewNote(body) : updateNote(body, noteInfo.id)
+    isNewNote
+      ? saveNewNote(body)
+      : updateNote(body, noteInfo.id).then(() => {
+          setNoteInfo({
+            ...noteInfo,
+            title: values.title,
+            content: values.content,
+          })
+        })
   }
 
   return (
@@ -48,8 +56,9 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
         <ClearIcon
           className="fullNote_icon"
           onClick={() => {
-            isNewNote ? navigate('/notes') : setIsEditable(false)
-            setNoteInfo(InitNewNoteValues)
+            isNewNote
+              ? (navigate('/notes'), setNoteInfo(INIT_NEW_NOTE_VALUES))
+              : setIsEditable(false)
           }}
         />
       </div>
