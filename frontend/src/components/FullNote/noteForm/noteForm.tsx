@@ -11,7 +11,7 @@ import { saveNewNote, updateNote } from '../../../api/Notes'
 import { useNoteInfoContext } from '../../../context/NoteInfoContextProvider'
 import { useSnackBarsContext } from '../../../context/SnackBarsProvider'
 
-export const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
+const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
   const { user } = useAuthContext()
   const { noteInfo, setNoteInfo } = useNoteInfoContext()
   const { displayAlert } = useSnackBarsContext()
@@ -89,3 +89,5 @@ export const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
     </>
   )
 }
+
+export default NoteForm
