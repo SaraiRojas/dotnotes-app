@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { INote } from '../model/interface'
-import { InitNewNoteValues } from '../utils/utils'
+import { INIT_NEW_NOTE_VALUES } from '../utils/constants'
 import { INoteInfocontext } from './interface'
 
 export const NoteInfoContext = React.createContext({} as INoteInfocontext)
@@ -10,7 +10,7 @@ export const NoteInfoContextProvider = ({
 }: {
   children: JSX.Element
 }) => {
-  const [noteInfo, setNoteInfo] = useState<INote>(InitNewNoteValues)
+  const [noteInfo, setNoteInfo] = useState<INote>(INIT_NEW_NOTE_VALUES)
 
   return (
     <NoteInfoContext.Provider

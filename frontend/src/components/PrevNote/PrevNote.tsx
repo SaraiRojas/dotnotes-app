@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
 import { INote } from '../../model/interface'
 import '../../scss/index.scss'
+import { noteDate } from '../../utils/utils'
 import NoteContainer from '../NoteContainer/NoteContainer'
 
 const PrevNode = ({ note }: { note: INote }) => {
@@ -20,7 +21,7 @@ const PrevNode = ({ note }: { note: INote }) => {
       <NoteContainer cardHeight="125px">
         <Typography className={'NoteContainer_title'}>{note.title}</Typography>
         <Typography className={'NoteContainer_date'}>
-          {note.created_at ? note.created_at : '-'}
+          {noteDate(note)}
         </Typography>
         <Typography className={'NoteContainer_text'} paragraph={true}>
           {note.content}

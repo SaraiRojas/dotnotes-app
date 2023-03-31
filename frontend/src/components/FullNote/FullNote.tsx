@@ -1,6 +1,5 @@
 import { Typography } from '@mui/material'
 import '../../scss/index.scss'
-import { formatDateToString } from '../../utils/formaters'
 import NoteContainer from '../NoteContainer/NoteContainer'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
@@ -9,11 +8,12 @@ import DropDownMenu from '../DropDownMenu/DropDownMenu'
 import { useState } from 'react'
 import { IMenuActions } from '../DropDownMenu/interfaces'
 import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
-import { InitNewNoteValues } from '../../utils/utils'
+import { INIT_NEW_NOTE_VALUES } from '../../utils/constants'
 import NoteForm from './noteForm/noteForm'
 import { deleteNote } from '../../api/Notes'
 import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
 import { useSnackBarsContext } from '../../context/SnackBarsProvider'
+import { noteDate } from '../../utils/utils'
 
 const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
   const { noteInfo, setNoteInfo } = useNoteInfoContext()
@@ -57,7 +57,7 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
               <ArrowBackIcon
                 className="fullNote_icon"
                 onClick={() => {
-                  navigate('/notes'), setNoteInfo(InitNewNoteValues)
+                  navigate('/notes'), setNoteInfo(INIT_NEW_NOTE_VALUES)
                 }}
               />
               <DropDownMenu Name={MoreHorizIcon} actions={noteActions} />
@@ -67,7 +67,7 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
                 {noteInfo.title}
               </Typography>
               <Typography className={'NoteContainer_date'}>
-                {noteInfo.created_at}
+                {noteDate(noteInfo)}
               </Typography>
               <Typography className={'NoteContainer_text'} paragraph={true}>
                 {noteInfo.content}
