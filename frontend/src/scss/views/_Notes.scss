@@ -1,7 +1,8 @@
 .notes-container {
   padding: 0 5%;
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
+  overflow-y: auto;
 
   &__no-notes-found {
     padding-top: 10%;
