@@ -36,7 +36,7 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
         navigate('/notes')
       })
       .catch(() => {
-        displayAlert('Something went wrong.', 'error')
+        displayAlert('Something went wrong. Try again', 'error')
       })
   }
 
