@@ -3,13 +3,12 @@ import axios from 'axios'
 export const getNotes = (userId: string) =>
   axios({
     method: 'get',
-    //url: `http://localhost:3000/users/search?usercode=${userId}`,
-    url: `http://localhost:3000/users/search?usercode=84-293-7581`,
+    url: `http://localhost:3000/users/search?usercode=${userId}`,
     responseType: 'json',
   }).then((data: any) => data.data.data.user[0].notes)
 
 export const saveNewNote = (noteInfo: {
-  user_id: string
+  userid: number
   title: string
   content: string
 }) => {
@@ -20,7 +19,7 @@ export const saveNewNote = (noteInfo: {
 }
 
 export const updateNote = (
-  noteInfo: { user_id: string; title: string; content: string },
+  noteInfo: { user_id: string | number; title: string; content: string },
   note_id: string
 ) => {
   const body = {
@@ -33,3 +32,8 @@ export const updateNote = (
 export const deleteNote = (note_id: string) => {
   return axios.delete(`http://localhost:3000/notes/${note_id}`)
 }
+
+export const getUserCode = (user_id: string) =>
+  axios
+    .get(`http://localhost:3000/users/search?usercode=${user_id}`)
+    .then((data) => data.data.data.user[0].id)

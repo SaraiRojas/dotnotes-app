@@ -33,10 +33,11 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
     setOpen(false)
     deleteNote(noteInfo.id)
       .then(() => {
+        setNoteInfo(INIT_NEW_NOTE_VALUES)
         navigate('/notes')
       })
       .catch(() => {
-        displayAlert('Something went wrong.', 'error')
+        displayAlert('Something went wrong. Try again', 'error')
       })
   }
 
