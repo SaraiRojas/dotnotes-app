@@ -4,6 +4,15 @@
   width: 100vw;
   overflow-y: auto;
 
+  &::-webkit-scrollbar{
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+  }
+
   &__no-notes-found {
     padding-top: 10%;
     height: 100%;
