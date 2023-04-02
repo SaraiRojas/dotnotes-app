@@ -9,13 +9,12 @@
 <br />
 <div align="center">
   <a href="https://github.com/SaraiRojas/dotnotes-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/DotNotes.logoDots.png" alt="Logo" width="250">
   </a>
-
-<h3 align="center">dotnotes</h3>
-
+  <br />
+  <br />
   <p align="center">
-    Notes Web App with MySQL+Node+Express as backend and Vite+SCSS sas frontend
+    Notes Web App with MySQL + Node + Express as backend,  Auth0 as authentication manager and React + Typescipt + Sass as frontend
     <br />
     <a href="https://github.com/SaraiRojas/dotnotes-app"><strong>Explore the docs »</strong></a>
     <br />
@@ -59,7 +58,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `SaraiRojas`, `dotnotes-app`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `dotnotes`, `Notes Web App with MySQL+Node+Express as backend and Vite+SCSS sas frontend`
+Web Notes appication. It allows de creation of a profile where notes can be created, edited and deleted if needed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,3 +235,4 @@ Project Link: [https://github.com/SaraiRojas/dotnotes-app](https://github.com/Sa
 [Node.js-url]: https://nodejs.org/es/
 [Docker]: https://img.shields.io/badge/Docker-35495E?style=for-the-badge&logo=docker&logoColor=4FC08D
 [Docker-url]: https://www.docker.com/
+[Typescript]:
