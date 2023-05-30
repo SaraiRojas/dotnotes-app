@@ -11,12 +11,14 @@ import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
 import { INIT_NEW_NOTE_VALUES } from '../../utils/constants'
 import NoteForm from './noteForm/noteForm'
 import { deleteNote } from '../../api/Notes'
-import { useNoteInfoContext } from '../../context/NoteInfoContextProvider'
 import { useSnackBarsContext } from '../../context/SnackBarsProvider'
 import { noteDate } from '../../utils/utils'
+import { useDispatch, useSelector } from 'react-redux'
+import { noteInfo, noteToBeOPen } from '../../app/features/counter/notesSlice'
 
 const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
-  const { noteInfo, setNoteInfo } = useNoteInfoContext()
+  const dispatch = useDispatch()
+  const note = useSelector(noteInfo)
 
   const navigate = useNavigate()
 
@@ -31,9 +33,9 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
 
   const handleAccept = () => {
     setOpen(false)
-    deleteNote(noteInfo.id)
+    deleteNote(note.id)
       .then(() => {
-        setNoteInfo(INIT_NEW_NOTE_VALUES)
+        dispatch(noteToBeOPen(INIT_NEW_NOTE_VALUES))
         navigate('/notes')
       })
       .catch(() => {
@@ -58,20 +60,21 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
               <ArrowBackIcon
                 className="fullNote_icon"
                 onClick={() => {
-                  navigate('/notes'), setNoteInfo(INIT_NEW_NOTE_VALUES)
+                  navigate('/notes'),
+                    dispatch(noteToBeOPen(INIT_NEW_NOTE_VALUES))
                 }}
               />
               <DropDownMenu Name={MoreHorizIcon} actions={noteActions} />
             </div>
             <div className="fullNote_editableContainer">
               <Typography className={'NoteContainer_title'}>
-                {noteInfo.title}
+                {note.title}
               </Typography>
               <Typography className={'NoteContainer_date'}>
-                {noteDate(noteInfo)}
+                {noteDate(note)}
               </Typography>
               <Typography className={'NoteContainer_text'} paragraph={true}>
-                {noteInfo.content}
+                {note.content}
               </Typography>
             </div>
           </>

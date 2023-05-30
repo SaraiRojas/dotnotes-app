@@ -8,17 +8,19 @@ import ClearIcon from '@mui/icons-material/Clear'
 import { INIT_NEW_NOTE_VALUES } from '../../../utils/constants'
 import { INoteForm } from './interface'
 import { getUserCode, saveNewNote, updateNote } from '../../../api/Notes'
-import { useNoteInfoContext } from '../../../context/NoteInfoContextProvider'
 import { useSnackBarsContext } from '../../../context/SnackBarsProvider'
+import { useDispatch, useSelector } from 'react-redux'
+import { noteInfo, noteToBeOPen } from '../../../app/features/counter/notesSlice'
 
 const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
   const { user } = useAuthContext()
-  const { noteInfo, setNoteInfo } = useNoteInfoContext()
+  const dispatch = useDispatch()
+  const note = useSelector(noteInfo)
   const { displayAlert } = useSnackBarsContext()
 
   const navigate = useNavigate()
 
-  const [values, setValues] = useState<INote>(noteInfo)
+  const [values, setValues] = useState<INote>(note)
   const [userCode, setUserCode] = useState<number>(0)
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
 
   const handleChange = (value: string, key: string) => {
     const newValues = {
-      ...noteInfo,
+      ...values,
       [key]: value,
     }
     setValues(newValues)
@@ -46,23 +48,23 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
     isNewNote
       ? saveNewNote({ ...body, userid: userCode })
           .then(() => {
-            setNoteInfo({
-              ...noteInfo,
+            dispatch(noteToBeOPen({
+              ...note,
               title: values.title,
               content: values.content,
-            })
+            }))
             setIsEditable(false)
           })
           .catch(() => {
             displayAlert('Something went wrong. Try again', 'error')
           })
-      : updateNote(body, noteInfo.id)
+      : updateNote(body, note.id)
           .then(() => {
-            setNoteInfo({
-              ...noteInfo,
+            dispatch(noteToBeOPen({
+              ...note,
               title: values.title,
               content: values.content,
-            })
+            }))
             setIsEditable(false)
           })
           .catch(() => {
@@ -78,7 +80,7 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
           className="fullNote_icon"
           onClick={() => {
             isNewNote
-              ? (navigate('/notes'), setNoteInfo(INIT_NEW_NOTE_VALUES))
+              ? (navigate('/notes'), dispatch(noteToBeOPen(INIT_NEW_NOTE_VALUES)))
               : setIsEditable(false)
           }}
         />

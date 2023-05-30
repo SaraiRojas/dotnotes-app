@@ -5,12 +5,6 @@ export interface Icontext {
   user: Iuser
   isLoading: boolean
 }
-
-export interface INoteInfocontext {
-  noteInfo: any
-  setNoteInfo: Dispatch<SetStateAction<any[]>>
-}
-
 export interface ISnackBarscontext {
   displayAlert: function
 }

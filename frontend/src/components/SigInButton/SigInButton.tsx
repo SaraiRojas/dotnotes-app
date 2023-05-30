@@ -1,14 +1,14 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Button from '@mui/material/Button'
 import '../../scss/index.scss'
 import { AuthContext } from '../../context/AuthContextProvider'
-import { authentication } from '../../app/features/counter/authSlice'
-import { useSelector } from 'react-redux'
+import {
+  authentication,
+  isUserAuthenticated,
+} from '../../app/features/counter/authSlice'
 
 const SignInButton = () => {
   const { logIn } = useContext(AuthContext)
-  const authInfo = useSelector(authentication)
-  console.log(authInfo)
 
   return (
     <Button
