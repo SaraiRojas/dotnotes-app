@@ -8,15 +8,17 @@ import ClearIcon from '@mui/icons-material/Clear'
 import { INIT_NEW_NOTE_VALUES } from '../../../utils/constants'
 import { INoteForm } from './interface'
 import { getUserCode, saveNewNote, updateNote } from '../../../api/Notes'
-import { useSnackBarsContext } from '../../../context/SnackBarsProvider'
 import { useDispatch, useSelector } from 'react-redux'
-import { noteInfo, noteToBeOPen } from '../../../app/features/counter/notesSlice'
+import {
+  noteInfo,
+  noteToBeOPen,
+} from '../../../app/features/counter/notesSlice'
+import { handleSnackBars } from '../../../app/features/counter/snackBarsSlice'
 
 const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
   const { user } = useAuthContext()
   const dispatch = useDispatch()
   const note = useSelector(noteInfo)
-  const { displayAlert } = useSnackBarsContext()
 
   const navigate = useNavigate()
 
@@ -48,27 +50,41 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
     isNewNote
       ? saveNewNote({ ...body, userid: userCode })
           .then(() => {
-            dispatch(noteToBeOPen({
-              ...note,
-              title: values.title,
-              content: values.content,
-            }))
+            dispatch(
+              noteToBeOPen({
+                ...note,
+                title: values.title,
+                content: values.content,
+              })
+            )
             setIsEditable(false)
           })
           .catch(() => {
-            displayAlert('Something went wrong. Try again', 'error')
+            dispatch(
+              handleSnackBars({
+                message: 'Something went wrong. Try again',
+                severity: 'error',
+              })
+            )
           })
       : updateNote(body, note.id)
           .then(() => {
-            dispatch(noteToBeOPen({
-              ...note,
-              title: values.title,
-              content: values.content,
-            }))
+            dispatch(
+              noteToBeOPen({
+                ...note,
+                title: values.title,
+                content: values.content,
+              })
+            )
             setIsEditable(false)
           })
           .catch(() => {
-            displayAlert('Something went wrong. Try again', 'error')
+            dispatch(
+              handleSnackBars({
+                message: 'Something went wrong. Try again',
+                severity: 'error',
+              })
+            )
           })
   }
 
@@ -80,7 +96,8 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
           className="fullNote_icon"
           onClick={() => {
             isNewNote
-              ? (navigate('/notes'), dispatch(noteToBeOPen(INIT_NEW_NOTE_VALUES)))
+              ? (navigate('/notes'),
+                dispatch(noteToBeOPen(INIT_NEW_NOTE_VALUES)))
               : setIsEditable(false)
           }}
         />

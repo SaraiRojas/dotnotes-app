@@ -6,8 +6,7 @@ import { AuthContextProvider } from './context/AuthContextProvider'
 import { ProtectedRoute } from './router/ProtectedRoute'
 import LayOut from './components/Layouts/LayOut'
 import FullNote from './components/FullNote/FullNote'
-import { NoteInfoContextProvider } from './context/NoteInfoContextProvider'
-import { SnackBarsContextProvider } from './context/SnackBarsProvider'
+import { Snackbars } from './components/SnackBars/SnackBars'
 
 function App() {
   const privateRoutes = () => {
@@ -21,18 +20,17 @@ function App() {
   }
 
   return (
-    <Router>
-      <AuthContextProvider>
-        <NoteInfoContextProvider>
-          <SnackBarsContextProvider>
-            <Routes>
-              <Route path="/" element={<LogIn />} />
-              {privateRoutes()}
-            </Routes>
-          </SnackBarsContextProvider>
-        </NoteInfoContextProvider>
-      </AuthContextProvider>
-    </Router>
+    <>
+      <Snackbars />
+      <Router>
+        <AuthContextProvider>
+          <Routes>
+            <Route path="/" element={<LogIn />} />
+            {privateRoutes()}
+          </Routes>
+        </AuthContextProvider>
+      </Router>
+    </>
   )
 }
 

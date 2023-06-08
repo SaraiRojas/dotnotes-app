@@ -11,10 +11,10 @@ import ConfirmationDialog from '../ConfirmationDialog/ConfirmationDialog'
 import { INIT_NEW_NOTE_VALUES } from '../../utils/constants'
 import NoteForm from './noteForm/noteForm'
 import { deleteNote } from '../../api/Notes'
-import { useSnackBarsContext } from '../../context/SnackBarsProvider'
 import { noteDate } from '../../utils/utils'
 import { useDispatch, useSelector } from 'react-redux'
 import { noteInfo, noteToBeOPen } from '../../app/features/counter/notesSlice'
+import { handleSnackBars } from '../../app/features/counter/snackBarsSlice'
 
 const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
   const dispatch = useDispatch()
@@ -24,7 +24,6 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
 
   const [open, setOpen] = useState(false)
   const [isEditable, setIsEditable] = useState(isNewNote)
-  const { displayAlert } = useSnackBarsContext()
 
   const noteActions: IMenuActions[] = [
     { label: 'Editar', action: () => setIsEditable(true) },
@@ -39,7 +38,12 @@ const FullNote = ({ isNewNote = false }: { isNewNote?: boolean }) => {
         navigate('/notes')
       })
       .catch(() => {
-        displayAlert('Something went wrong. Try again', 'error')
+        dispatch(
+          handleSnackBars({
+            message: 'Something went wrong. Try again',
+            severity: 'error',
+          })
+        )
       })
   }
 
