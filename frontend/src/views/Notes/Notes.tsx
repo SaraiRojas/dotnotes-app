@@ -1,6 +1,5 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../../scss/index.scss'
-import { AuthContext } from '../../context/AuthContextProvider'
 import { getNotes } from '../../api/Notes'
 import PrevNode from '../../components/PrevNote/PrevNote'
 import { Stack } from '@mui/material'
@@ -11,9 +10,10 @@ import SpeedDial from '@mui/material/SpeedDial'
 import SpeedDialIcon from '@mui/material/SpeedDialIcon'
 import { useNavigate } from 'react-router-dom'
 import LoadingNodes from '../../components/LoadingNotes/LoadingNodes'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Notes = () => {
-  const { user } = useContext(AuthContext)
+  const { user } = useAuth0()
 
   const navigate = useNavigate()
 
@@ -21,14 +21,16 @@ const Notes = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    getNotes(user.sub)
-      .then((data: any) => {
-        setNotes(data)
-      })
-      .catch(() => {
-        setNotes([])
-      })
-      .finally(() => setIsLoading(false))
+    if (user?.sub) {
+      getNotes(user.sub)
+        .then((data: any) => {
+          setNotes(data)
+        })
+        .catch(() => {
+          setNotes([])
+        })
+        .finally(() => setIsLoading(false))
+    }
   }, [])
 
   const renderNotes = () => {

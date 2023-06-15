@@ -1,20 +1,16 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
 import Button from '@mui/material/Button'
 import '../../scss/index.scss'
-import { AuthContext } from '../../context/AuthContextProvider'
-import {
-  authentication,
-  isUserAuthenticated,
-} from '../../app/features/counter/authSlice'
 
 const SignInButton = () => {
-  const { logIn } = useContext(AuthContext)
+  const { loginWithRedirect } = useAuth0()
 
   return (
     <Button
       className={'signInButton'}
       variant="outlined"
-      onClick={() => logIn()}
+      onClick={() => loginWithRedirect()}
     >
       Sign In
     </Button>

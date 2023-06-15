@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LogIn from './views/LogIn/LogIn'
 import Notes from './views/Notes/Notes'
-import { AuthContextProvider } from './context/AuthContextProvider'
 import { ProtectedRoute } from './router/ProtectedRoute'
 import LayOut from './components/Layouts/LayOut'
 import FullNote from './components/FullNote/FullNote'
@@ -23,12 +22,10 @@ function App() {
     <>
       <Snackbars />
       <Router>
-        <AuthContextProvider>
-          <Routes>
-            <Route path="/" element={<LogIn />} />
-            {privateRoutes()}
-          </Routes>
-        </AuthContextProvider>
+        <Routes>
+          <Route path="/" element={<LogIn />} />
+          {privateRoutes()}
+        </Routes>
       </Router>
     </>
   )

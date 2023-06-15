@@ -1,4 +1,3 @@
-import { useAuthContext } from '../../../context/AuthContextProvider'
 import '../../../scss/index.scss'
 import { useNavigate } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
@@ -14,9 +13,10 @@ import {
   noteToBeOPen,
 } from '../../../app/features/counter/notesSlice'
 import { handleSnackBars } from '../../../app/features/counter/snackBarsSlice'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
-  const { user } = useAuthContext()
+  const { user } = useAuth0()
   const dispatch = useDispatch()
   const note = useSelector(noteInfo)
 
@@ -26,7 +26,7 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
   const [userCode, setUserCode] = useState<number>(0)
 
   useEffect(() => {
-    if (isNewNote) {
+    if (isNewNote && user?.sub) {
       getUserCode(user.sub).then((userInfo) => {
         setUserCode(userInfo)
       })
@@ -45,7 +45,7 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
     const body = {
       title: values.title,
       content: values.content,
-      user_id: user.sub,
+      user_id: user?.sub || 0,
     }
     isNewNote
       ? saveNewNote({ ...body, userid: userCode })

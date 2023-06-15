@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import '../../scss/index.scss'
 import SignInButton from '../../components/SigInButton/SigInButton'
-import { AuthContext } from '../../context/AuthContextProvider'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const LogIn = () => {
-  const { logIn } = useContext(AuthContext)
+  const { loginWithRedirect } = useAuth0()
   return (
     <main>
       <h1>
@@ -15,7 +15,7 @@ const LogIn = () => {
       <SignInButton />
       <p>
         Don't have an account yet?{' '}
-        <a className={'logIn__registation'} onClick={() => logIn()}>
+        <a className={'logIn__registation'} onClick={() => loginWithRedirect()}>
           Register
         </a>
       </p>
