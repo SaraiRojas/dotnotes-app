@@ -34,7 +34,8 @@ const Notes = () => {
   const renderNotes = () => {
     return !_.isEmpty(notes) ? (
       <Stack spacing={0}>
-        {notes && notes.map((note: INote) => <PrevNode note={note} />)}
+        {notes &&
+          notes.map((note: INote) => <PrevNode note={note} key={note.id} />)}
       </Stack>
     ) : (
       <div className="notes-container__no-notes-found">
