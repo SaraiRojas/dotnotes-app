@@ -15,7 +15,9 @@ export const saveNewNote = (noteInfo: {
   const body = {
     ...noteInfo,
   }
-  return axios.post('http://localhost:3000/notes/', body)
+  return axios
+    .post('http://localhost:3000/notes/', body)
+    .then((data) => data.data.data.note)
 }
 
 export const updateNote = (

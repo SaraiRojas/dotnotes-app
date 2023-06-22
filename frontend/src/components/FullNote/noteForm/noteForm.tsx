@@ -45,11 +45,9 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
     }
     isNewNote
       ? saveNewNote({ ...body, userid: userCode })
-          .then(() => {
+          .then((data) => {
             setNoteInfo({
-              ...noteInfo,
-              title: values.title,
-              content: values.content,
+              ...data,
             })
             setIsEditable(false)
           })
