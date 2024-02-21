@@ -11,28 +11,46 @@ import SpeedDial from '@mui/material/SpeedDial'
 import SpeedDialIcon from '@mui/material/SpeedDialIcon'
 import { useNavigate } from 'react-router-dom'
 import LoadingNodes from '../../components/LoadingNotes/LoadingNodes'
+import { useQuery, gql } from '@apollo/client'
+
+const USER_NOTES = gql`
+  query UserNotes($userId: String!) {
+  userNotes(userId: $userId) {
+    content
+    id
+    user_id
+    title
+  }
+}
+`
 
 const Notes = () => {
   const { user } = useContext(AuthContext)
+  console.log(user)
+  const userId = user.sub
+  const { loading, data } = useQuery(USER_NOTES, {
+    variables: { userId },
+  })
+
+  const notes = data?.userNotes
+  console.log(notes)
 
   const navigate = useNavigate()
 
-  const [notes, setNotes] = useState<INote[]>([])
-  const [isLoading, setIsLoading] = useState(true)
+  // const [notes, setNotes] = useState<INote[]>([])
 
-  useEffect(() => {
-    getNotes(user.sub)
-      .then((data: any) => {
-        setNotes(data)
-      })
-      .catch(() => {
-        setNotes([])
-      })
-      .finally(() => setIsLoading(false))
-  }, [])
+  // useEffect(() => {
+  //   getNotes(user.sub)
+  //     .then((data: any) => {
+  //       setNotes(data)
+  //     })
+  //     .catch(() => {
+  //       setNotes([])
+  //     })
+  // }, [])
 
   const renderNotes = () => {
-    return !_.isEmpty(notes) ? (
+    return notes ? (
       <Stack spacing={0}>
         {notes && notes.map((note: INote) => <PrevNode note={note} />)}
       </Stack>
@@ -54,7 +72,7 @@ const Notes = () => {
 
   return (
     <div className="notes-container">
-      {isLoading ? <LoadingNodes /> : renderNotes()}
+      {loading ? <LoadingNodes /> : renderNotes()}
       <SpeedDial
         ariaLabel="Create new note"
         sx={{ position: 'absolute' }}

@@ -1,0 +1,7 @@
+mutation SaveNewNote($noteInfo: newNoteInfo!) {
+  saveNewNote(noteInfo: $noteInfo) {
+    id
+    title
+    content
+  }
+}

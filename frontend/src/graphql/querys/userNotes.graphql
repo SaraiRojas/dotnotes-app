@@ -1,0 +1,8 @@
+query UserNotes($userId: String!) {
+  userNotes(userId: $userId) {
+    content
+    id
+    user_id
+    title
+  }
+}

@@ -12,21 +12,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 })
 
-const query = gql`
-  query {
-    allUsers {
-      id
-      notes {
-        id
-        title
-        content
-      }
-    }
-  }
-`
-
-client.query({ query }).then((result) => console.log(result))
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ApolloProvider client={client}>

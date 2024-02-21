@@ -1,0 +1,3 @@
+query GetUserCode($user_id: String!) {
+  getUserCode(user_id: $user_id)
+}
