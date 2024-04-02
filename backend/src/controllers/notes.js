@@ -187,7 +187,7 @@ const controller = {
               httpStatus.CREATED.code,
               httpStatus.CREATED.status,
               'Note created',
-              { note: newNote },
+              { note: response },
             ),
           );
       })

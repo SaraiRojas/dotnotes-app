@@ -848,3 +848,68 @@
 [winston] [23-03-28 14:31:26] info: GET /users/search?usercode=32-861-5209, fetching user with code '32-861-5209'
 [winston] [23-03-31 17:28:35] info: Server running on: 192.168.86.38:3000.
 [winston] [23-03-31 17:28:35] info: You can open http://localhost:3000 in your browser.
+[winston] [23-06-22 15:53:25] info: Server running on: 192.168.86.38:3000.
+[winston] [23-06-22 15:53:25] info: You can open http://localhost:3000 in your browser.
+[winston] [23-06-22 15:54:00] info: Server running on: 192.168.86.38:3000.
+[winston] [23-06-22 15:54:00] info: You can open http://localhost:3000 in your browser.
+[winston] [23-06-22 15:54:09] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 15:54:10] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 15:57:54] info: Server running on: 192.168.86.38:3000.
+[winston] [23-06-22 15:57:54] info: You can open http://localhost:3000 in your browser.
+[winston] [23-06-22 15:58:06] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 15:58:07] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 15:58:09] info: POST /notes/, creating note
+[winston] [23-06-22 15:58:13] info: DELETE /notes/0, fetching note '0'
+[winston] [23-06-22 15:59:52] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 15:59:52] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:00:19] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:00:19] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:02:32] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:02:32] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:02:47] info: POST /notes/, creating note
+[winston] [23-06-22 16:03:08] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:08] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:12] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:12] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:16] info: POST /notes/, creating note
+[winston] [23-06-22 16:03:24] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:25] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:03:33] info: POST /notes/, creating note
+[winston] [23-06-22 16:05:03] info: Server running on: 192.168.86.38:3000.
+[winston] [23-06-22 16:05:03] info: You can open http://localhost:3000 in your browser.
+[winston] [23-06-22 16:05:09] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:05:10] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:05:11] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:05:11] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:05:15] info: POST /notes/, creating note
+[winston] [23-06-22 16:06:49] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:06:49] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:06:52] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:06:52] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:06:53] info: POST /notes/, creating note
+[winston] [23-06-22 16:07:09] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:07:09] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:07:11] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:07:11] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:07:15] info: POST /notes/, creating note
+[winston] [23-06-22 16:07:20] info: DELETE /notes/0, fetching note '0'
+[winston] [23-06-22 16:09:39] info: DELETE /notes/0, fetching note '0'
+[winston] [23-06-22 16:09:41] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:09:41] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:09:43] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:09:43] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:09:45] info: POST /notes/, creating note
+[winston] [23-06-22 16:09:49] info: DELETE /notes/92, fetching note '92'
+[winston] [23-06-22 16:09:49] info: DELETE /notes/92, deleting note '92'
+[winston] [23-06-22 16:09:50] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:09:50] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:11:07] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:11:07] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:12:41] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:12:53] info: POST /notes/, creating note
+[winston] [23-06-22 16:12:55] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:12:55] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:13:06] info: DELETE /notes/93, fetching note '93'
+[winston] [23-06-22 16:13:06] info: DELETE /notes/93, deleting note '93'
+[winston] [23-06-22 16:13:07] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'
+[winston] [23-06-22 16:13:07] info: GET /users/search?usercode=auth0|63d41ecd85d995b87a7a7332, fetching user with code 'auth0|63d41ecd85d995b87a7a7332'

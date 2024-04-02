@@ -31,7 +31,7 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
 
   const handleChange = (value: string, key: string) => {
     const newValues = {
-      ...noteInfo,
+      ...values,
       [key]: value,
     }
     setValues(newValues)
@@ -44,12 +44,10 @@ const NoteForm = ({ setIsEditable, isNewNote }: INoteForm) => {
       user_id: user.sub,
     }
     isNewNote
-      ? saveNewNote({...body, userid: userCode})
-          .then(() => {
+      ? saveNewNote({ ...body, userid: userCode })
+          .then((data) => {
             setNoteInfo({
-              ...noteInfo,
-              title: values.title,
-              content: values.content,
+              ...data,
             })
             setIsEditable(false)
           })
